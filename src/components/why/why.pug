@@ -1,0 +1,28 @@
+include ../vars/vars
+section.section.why
+	.container
+		.why-inner
+			.why-content
+				.h2.fsb.section-title Почему вам это надо
+				.subtitle.t5 Наш курс предназначен для начинающих и профессиональных дизайнеров, студентов и любителей моды, желающих освоить уникальный метод макетирования одежды. Вы сможете раскрыть свой творческий потенциал, создавать стильные наряды и профессионально выполнять макеты для пошива одежды.
+			.why-grid
+					.why-img
+						img(src=PATH+"images/why-2.jpg" loading='lazy')
+					.why-img
+						img(src=PATH+"images/why-1.jpg" loading='lazy')
+					.why-img
+						img(src=PATH+"images/why-3.jpg" loading='lazy')
+					.why-img
+						img(src=PATH+"images/why-4.jpg" loading='lazy')
+section.section.section--bg
+	.container
+		.section-header.text--center
+			.h2.fsb.section-title Что вы точно будете уметь после курса:
+		.do-grid
+			each  i, index in doCards
+				.do-card
+					.do-card__num.fb.t3=index + 1
+					.do-card__title=i.title
+					.do-card__text.t6=i.text
+
+

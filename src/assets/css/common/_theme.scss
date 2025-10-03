@@ -1,0 +1,18 @@
+@import "src/assets/css/vars_mixins/vars_mixins";
+
+:root {
+	--base-color: #f6a936;
+	--second-color: #ff8562;
+	--base-color-hover: #f09a9a;
+	--text-color: #737373;
+	--text-color-black: #232323;
+	--success: #3ccd76;
+	--bg-card: #fafafa;
+	--radius: 0.8rem;
+	--radiusXL: 1.6rem;
+	--border: #f1f1f1;
+	--section-margin: 12rem;
+	--section-bg: #fdf2f2;
+	--shadow-sm: 0 0 10px 5px rgba(34,34,34, .04);
+	--shadow-md: 0 0 24px 5px rgba(34,34,34, .14)
+}

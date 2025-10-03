@@ -1,0 +1,34 @@
+//- подключение общих критических стилей
+mixin style-includer()
+	if (PROJECT_MODE !== 'dev')
+		.
+			#{''}
+
+
+
+
+		each item in componentsList
+			link(rel='stylesheet' href= dir + './assets/components/' + item + '/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+
+
+//- Подключение критический стилей отдельных компонентов
+mixin componentsCriticalStyles-includer()
+
+	each item in componentsCriticalList
+		link(rel="stylesheet" href= '../../html/css/' + item + '/style.css' inline)
+
+
+//- Подключение скриптов отдельных компонентов
+mixin componentsScripts-includer()
+	if (PROJECT_NAME !== '')
+		script(src= dir + '/concat/' + pageName + '_html.js' defer)
+	else if (PROJECT_MODE !== 'dev')
+		each item in componentsScriptsList
+			script(src= dir + './assets/components/' + item + '/script.min.js' defer)
+
+
+//- Подключение скриптов отдельных вендоров
+mixin vendorScripts-includer()
+
+	each item in vendorScriptsList
+		script(src=`./js/vendor/${item}` defer)

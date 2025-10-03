@@ -1,0 +1,22 @@
+extends ../../layout/layout
+
+block vars
+	- var pageTitle = 'Онлайн-курс Татьяны Киреевой | Оферта на оказание услуг'
+	- var pageBodyClass = ''
+	- var dir = '/'
+
+
+
+block main
+
+	include ../../components/oferta/content
+
+
+block componentsCriticalStyles
+	+componentsCriticalStyles-includer()
+block vendorScripts
+	+vendorScripts-includer()
+block componentsStyles
+	+style-includer()
+block componentsScripts
+	+componentsScripts-includer()

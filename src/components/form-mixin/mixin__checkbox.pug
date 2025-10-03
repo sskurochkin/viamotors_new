@@ -1,0 +1,44 @@
+mixin checkbox(args={})
+	+include-style('form-mixin')
+	- var id = Math.floor(Math.random() * 9999999999)
+	.form-group(class= args.fg_mod)
+		.checkbox(class= args.wrap_mod )
+			if (args.required)
+				if (args.checked)
+					input(class="form-control" type='checkbox', id= 'ID' + id, name= 'NAME' + id, value='active', required, data-bv-notempty-message="Заполните поле" checked class= args.input_mod)&attributes(
+						attributes)
+				else
+					input(class="form-control" type='checkbox', id= 'ID' + id, name= 'NAME' + id, value='active' data-bv-notempty-message="Заполните поле" required class= args.input_mod)&attributes(
+						attributes)
+
+			else
+				if (args.checked)
+					input(class="form-control" type='checkbox', id= 'ID' + id, name= 'NAME' + id, value='active', checked class= args.input_mod)&attributes(
+						attributes)
+				else
+					input(class="form-control" type='checkbox', id= 'ID' + id, name= 'NAME' + id, value='active' class= args.input_mod)&attributes(
+						attributes)
+			label(for= 'ID' + id class= args.label_mod style=args.style)= args.label
+				block
+				if (args.filter)
+					|1
+					span (12)
+				if (args.sub)
+					span.checkbox__descr я согласен на обработку
+						a(href='#' class="btn btn--text-icon")
+							span моих персональных данных
+				if (args.policy)
+					span.checkbox__descr Я согласен на  <a href='/policy' target="_blank"> <span> обработку   персональных данных </span></a>
+				if (args.sub2)
+					span.checkbox__descr.checkbox__descr--mw  Согласен на <a href='#' class="btn btn--text-icon"><span> Обработку   персональных данных</span></a>
+				if (args.sub3)
+					span.checkbox__descr.checkbox__descr--mw Согласен на <a href='#' class="btn btn--text-icon"><span> СМС рассылку </span></a>
+				if (args.sub4)
+					span.checkbox__descr.checkbox__descr--mw Согласен на <a href='#' class="btn btn--text-icon"><span> E-mail рассылку</span></a>
+				if (args.sub5)
+					span.checkbox__descr.checkbox__descr--mw Согласен на <a href='#' class="btn btn--text-icon"><span> Условия договора оферты</span></a>
+			if (args.sublabel)
+				span.checkbox__auth= args.sublabel
+			if (args.auth)
+				.checkbox__descr Согласен на обработку <a href="#" class="btn btn--text-icon"> <span> персональных данныx </span> </a>
+

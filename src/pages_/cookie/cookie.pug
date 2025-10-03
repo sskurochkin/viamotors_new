@@ -1,0 +1,22 @@
+extends ../../layout/layout
+
+block vars
+	- var pageTitle = 'Онлайн-курс Татьяны Киреевой | Политика обработки cookie'
+	- var pageBodyClass = ''
+	- var dir = '/'
+
+
+
+block main
+
+	include ../../components/cookie/content
+
+
+block componentsCriticalStyles
+	+componentsCriticalStyles-includer()
+block vendorScripts
+	+vendorScripts-includer()
+block componentsStyles
+	+style-includer()
+block componentsScripts
+	+componentsScripts-includer()

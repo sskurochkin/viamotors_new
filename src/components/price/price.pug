@@ -1,0 +1,133 @@
+section.section.section--bg.price#price(x-data="price")
+	.container
+
+		.h2.fsb.section-title.text--center Инвестируйте в свое дизайнерское будущее!
+		.course-subtitle.subtitle.t5 Этот курс — идеальный старт для тех, кто мечтает покорить мир моды и создавать настоящие шедевры. Присоединяйтесь и превратите ваши идеи в реальность вместе с нами!
+
+		.price-list
+			.price-card
+				.price-card__title.text--center.t3.fsb Базовый курс
+				.price-card__descr.t6 "Макетирование методом наколки"
+				.price-card__cost.t3.fb 620 бел. рублей
+				.price-card__info
+					p 10 видео-уроков в записи для самостоятельного изучения
+					p Подробные конспекты к каждому уроку
+				.price-card__link(@click="openPopup(620)")
+					.js-btn-buy.btn.btn--primary Купить
+
+			.price-card
+				.price-card__title.text--center.t3.fsb Продвинутый курс
+				.price-card__descr.t6 Изучение метода для профессиональных дизайнеров / 10 модулей
+				.price-card__cost.t3.fb 1550 бел.рублей
+				.price-card__info
+					p 10 видео-уроков в записи для самостоятельного изучения
+					p Подробные конспекты у каждому уроку
+					p + 2 индивидуальные консультации Татьяны (онлайн или офлайн на выбор)
+
+				.price-card__link
+					.js-btn-buy.btn.btn--primary(@click="openPopup(1550)") Купить
+
+			.price-card
+				.price-card__title.text--center.t3.fsb VIP-Тариф
+				.price-card__descr.t6 Индивидуальное сопровождение
+				.price-card__cost.t3.fb 4650 бел.рублей
+				.price-card__info
+					p 10 видео-уроков в записи
+					p Подробные конспекты у каждому уроку
+					p Индивидуальное сопровождение Татьяной (онлайн или офлайн на выбор)
+				.price-card__link
+					.js-btn-buy.btn.btn--primary(@click="openPopup(4650)") Купить
+
+
+
+	.modal(:class="modal && 'open'")
+		.modal__bg(@click="closePopup")
+
+		.modal__inner
+			.modal__close(@click="closePopup")
+				+icon('i-close')(style="width: 2rem; height:2rem;")
+			.modal-form(x-show="!errorMessage && !success" x-cloak)
+				.modal-form__header.t3.fsb Заполните форму
+				.modal-form__subtitle Укажите свои данные для верного оформления заказа
+				form.form-validate(x-ref="form")
+					input(type="hidden" x-model="amount" name="amount")
+
+					+input({
+						label: 'Ваше имя',
+						fg_mod: 'form-group--margin',
+						type: 'text',
+						id: 'name',
+						name: false,
+						small: false,
+						placeholder: 'Ваше имя',
+						required: true,
+						validation: {
+							message: 'Заполните поле',
+							regexp: 'Неверный формат',
+							emailaddress: ' ',
+							identical: false
+						}
+					})
+
+					+input({
+						label: 'Телефон',
+						fg_mod: 'form-group--margin',
+						type: 'tel',
+						id: 'phone',
+						name: false,
+						small: false,
+						placeholder: '+375 (__) ___-__-__',
+						required: true,
+						pattern: 'phone',
+						validation: {
+							message: 'Заполните поле',
+							regexp: 'Неверный формат',
+							emailaddress: ' ',
+							identical: false
+						}
+					})(data-mask="+375 (__) ___-__-__")
+
+					+input({
+						label: 'E-mail',
+						fg_mod: 'form-group--margin',
+						id: 'email',
+						type: 'email',
+						name: false,
+						small: false,
+						placeholder: 'example@example.com',
+						required: true,
+						pattern: '[A-Za-zА-Яа-я0-9\_\-]{1,}@[A-Za-zА-Яа-я0-9\_\-]{1,}\.[A-Za-zА-Яа-я0-9]{2,}',
+						validation: {
+							message: 'Заполните поле',
+							regexp: 'Неверный формат',
+							emailaddress: ' ',
+							identical: false
+						}
+					})
+
+					<div class="form-group form-group--margin">
+					<div class="checkbox">
+					<input class="form-control" x-model="policy" type="checkbox" id="policy" name="policy">
+					<label for="policy"><span class="checkbox__descr">Я согласен на <a href="/policy" target="_blank"> <span> обработку персональных данных </span></a> и принимаю <a href="/oferta" target="_blank"> <span> условия оферты </span></a></span>
+					</label>
+					</div>
+					</div>
+					button(type="submit" :disabled="!policy").btn.btn--primary.btn--fw
+						span Отправить
+				.info После успешной оплаты <b>обязательно нажмите</b> на кнопку <b>"Вернуться в магазин"</b> и вы автоматически будете перенаправлены в наш Telegram-канал, где будут предоставлены все доступы к урокам. Также, на вашу почту придет письмо с доступом к обучающим материалам. Если письмо не поступит в течение 30 минут, пожалуйста, отправьте скриншот оплаты в наш директ, и мы оперативно вышлем письмо.<br>До встречи на курсе!
+			.modal-form(x-show="errorMessage" x-cloak)
+				.modal-form__header.t3.fsb Произошла ошибка
+				.modal-form__subtitle
+					h5 Код ошибки <span x-text="errorCode"></span>
+					h5(x-text="errorMessage")
+					br
+					p Свяжитесь с нами по телефону <a href="tel:+375291784569">+375 29 178-45-69</a>  и собщите код ошибки
+					br
+					.t3.fsb Спасибо
+			.modal-form(x-show="success" x-cloak)
+				.modal-form__header.t3.fsb Спасибо
+				.modal-form__subtitle
+					.success
+						h5 Заказ оформлен.<br>Пожалуйста подождите, идет переход к оплате
+						br
+						.loader

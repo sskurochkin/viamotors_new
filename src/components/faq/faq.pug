@@ -1,0 +1,47 @@
+section.section.faq#faq
+	.container
+		.faq-inner
+			.h2.fsb.section-title.text--center Частые вопросы
+
+			.faq-list
+				.faq-item(x-data="{open: false}" :class="open && 'active'" @click.outside="open = false")
+					.faq-item__header(@click="open=!open")
+						.faq-item__title.fsb.t4 Что такое метод макетирования?
+						span.trigger
+							+icon("i-close")(style="width: 2.4rem; height: 2.4rem")
+					.faq-item__body(x-show="open" x-cloak x-transition)
+						.wrap
+							p Метод макетирования — это процесс создания объёмных моделей одежды из ткани или других материалов. Он позволяет дизайнерам быстро и эффективно создавать прототипы своих идей, а также вносить изменения и корректировки на ранних этапах разработки.
+				.faq-item(x-data="{open: false}" :class="open && 'active'" @click.outside="open = false")
+					.faq-item__header(@click="open=!open")
+						.faq-item__title.fsb.t4 Для кого подходит этот курс?
+						span.trigger
+							+icon("i-close")(style="width: 2.4rem; height: 2.4rem")
+					.faq-item__body(x-show="open" x-cloak x-transition)
+						.wrap
+							p Курс предназначен для начинающих и профессиональных дизайнеров, студентов и любителей моды, желающих освоить уникальный метод макетирования. Независимо от вашего уровня подготовки, вы сможете развить свои навыки и научиться создавать стильные наряды.
+				.faq-item(x-data="{open: false}" :class="open && 'active'" @click.outside="open = false")
+					.faq-item__header(@click="open=!open")
+						.faq-item__title.fsb.t4 Как проходит обучение?
+						span.trigger
+							+icon("i-close")(style="width: 2.4rem; height: 2.4rem")
+					.faq-item__body(x-show="open" x-cloak x-transition)
+						.wrap
+							p Обучение проходит онлайн, что позволяет вам учиться в удобное для вас время и из любой точки мира. После оплаты обучения на почту придет ссылка с доступом к урокам.
+				.faq-item(x-data="{open: false}" :class="open && 'active'" @click.outside="open = false")
+					.faq-item__header(@click="open=!open")
+						.faq-item__title.fsb.t4 Какие модули входят в программу курса?
+						span.trigger
+							+icon("i-close")(style="width: 2.4rem; height: 2.4rem")
+					.faq-item__body(x-show="open" x-cloak x-transition)
+						.wrap
+							ul.list-marker
+								li Основы макетирования. Моделирование одежды методом наколки. Общие понятия
+								li Разметка манекена
+								li Наколка базовой основы плечевого изделия прилегающего силуэта, отрезного по линии талии
+								li Наколка баски в изделии прилегающего силуэта, отрезного по линии талии
+								li Уточнение контурных линий наколки и область смежных участков базовой основы плечевого изделия
+								li Преобразование базовой основы изделия прилегающего силуэта
+								li Построение шаблона, для последующей наколки различных покроев рукава, в том числе фантазийных
+								li Наколка воротников различных видов- стойка, стояче-отложной
+								li Наколка базовой основы прямой одношовной юбки

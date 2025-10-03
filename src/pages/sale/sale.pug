@@ -1,0 +1,49 @@
+extends ../../layout/layout
+
+block vars
+	- var pageTitle = 'ViaMotors | Оказане услуг по ремонту автомобилей'
+	- var pageBodyClass = 'sale-page'
+	- var dir = ''
+
+
+
+block main
+	.section.sale
+		.container
+			+section-title('Скидки и акции!!!')
+			.sale-wrapper
+				.sale-card
+					.sale-card__descr
+						| Бесплатная диагностика автомобиля при условии устранения неисправностей нашими мастерами.
+					.sale-card__img
+						.sale-card__img-wrap
+							img(src='./assets/images/sale-1.jpeg')
+				//-.sale-card
+					.sale-card__descr
+						| При ремонте автомобиля на нашем СТО мы предоставляем нашим клиентам скидку на запчасти в размере
+						span -10%
+					.sale-card__img
+						.sale-card__img-wrap
+							img(src='./assets/images/sale-2.jpg')
+				//-.sale-card
+					.sale-card__descr
+						| Акция!!! Заказав через нас шины в сети Автосеть, шиномонтаж в подарок!
+
+					.sale-card__img
+						.sale-card__img-wrap
+							img(src='./assets/images/og_main.jpg')
+
+
+
+
+
+block componentsCriticalStyles
+	+componentsCriticalStyles-includer()
+block vendorScripts
+	+vendorScripts-includer()
+block componentsStyles
+	+style-includer()
+block componentsScripts
+	+componentsScripts-includer()
+block scripts
+	

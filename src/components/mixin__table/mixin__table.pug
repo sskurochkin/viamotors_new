@@ -1,0 +1,24 @@
+mixin table(args= {}, title)
+	.table
+		if(title)
+			.table__title=title
+		.table__header.table-row
+			.table-cell
+				| Наименование работ
+			.table-cell
+				| Цена, от (бел.руб)
+		.table__body
+			each item in args.list
+				if(item.subtitle)
+					.table-row.table-row--subtitle
+						span=item.subtitle
+					.table-row
+						.table-cell=item.name
+						if(item.value)
+							.table-cell=item.value
+				else
+					.table-row
+						.table-cell=item.name
+						if(item.value)
+							.table-cell=item.value
+
