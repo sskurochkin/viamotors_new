@@ -1,0 +1,145 @@
+<section class="section u-calc">
+<div class="container">
+.u-title Калькулятор расходов
+
+<div class="u-calc__wrapper">
+
+<form action="" method="POST" class="u-calc--form" id="expense-calculator">
+<div class="u-calc--form-field">
+<label for="carCost" class="u-calc--form-label">Стоимость авто, $</label>
+<input type="number" id="carCost" name="carCost" placeholder="10 000" value="10000">
+</div>
+<div class="u-calc--form-field">
+<label for="engineVolume" class="u-calc--form-label">Двигатель, см<sup>3</sup></label>
+<input type="number" id="engineVolume" name="engineVolume" placeholder="1500" value="1500">
+</div>
+<div class="u-calc--form-field">
+<label for="carAge" class="u-calc--form-label">Возраст авто, лет</label>
+<select id="carAge" name="carAge">
+<option value="1">Менее 3-х лет</option>
+<option value="2" selected="">От 3 до 5 лет</option>
+<option value="3">Старше 5 лет</option>
+</select>
+</div>
+<div class="u-calc--form-field">
+<label for="auctionType" class="u-calc--form-label">Выбор аукциона</label>
+<select id="auctionType" name="auctionType">
+<option value="" disabled="" selected="">Выберите аукцион</option>
+<option value="Copart">Copart</option>
+<option value="IAAI">IAAI</option>
+</select>
+</div>
+<div class="u-calc--form-field">
+<label for="lotLocation" class="u-calc--form-label">Выбор площадки</label>
+<select id="lotLocation" name="lotLocation" disabled="">
+<option value="">Выберите площадку</option>
+</select>
+</div>
+<div class="u-calc--form-field">
+<label for="delivery" class="u-calc--form-label">Доставка через</label>
+<select id="delivery" name="delivery">
+<option value="lituania">Литва, Клайпеда</option>
+<option value="georgia">Грузия, Поти</option>
+</select>
+</div>
+<div class="u-calc--form-field">
+<label for="delivery" class="u-calc--form-label">Тип транспортного средства</label>
+<select id="carType" name="carType">
+<option value="sedan">Седан / Кроссовер</option>
+<option value="big">Внедорожник</option>
+<option value="pickUp">Пикап</option>
+<option value="moto">Мотоцикл</option>
+</select>
+</div>
+<div class="u-calc--form-field checkbox">
+<div class="u-calc--form-checkbox">
+<input id="electric" type="checkbox" name="electric">
+<label for="electric">
+<span></span> Электромобиль
+</label>
+</div>
+<div class="u-calc--form-checkbox">
+<input id="gibrid" type="checkbox" name="gibrid">
+<label for="gibrid">
+<span></span> Гибрид
+</label>
+</div>
+<div class="u-calc--form-checkbox">
+<input id="discount" type="checkbox" name="discount">
+<label for="discount">
+<span></span> Льготная растаможка
+</label>
+</div>
+<div class="u-calc--form-checkbox">
+<input id="insurance" type="checkbox" name="insurance">
+<label for="insurance">
+<span></span> Дополнительное страхование
+</label>
+</div>
+</div>
+</form>
+
+<div class="u-calc--inf u-calc--delivery">
+<div class="h4 u-calc--inf-title">Покупка и доставка</div>
+<ul class="u-calc--inf-lists">
+<li>
+<div class="u-calc--inf-label">Стоимость авто:</div>
+<div class="u-calc--inf-lists-value" id="purchaseCost">0 $</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Аукционный сбор:</div>
+<div class="u-calc--inf-lists-value" id="auctionFee">0 $</div>
+</li>
+<li>
+<div class="u-calc--inf-label" id="usaPortName">Транспортировка в порт:</div>
+<div class="u-calc--inf-lists-value" id="deliveryToPort">0 $</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Доставка по морю:</div>
+<div class="u-calc--inf-lists-value" id="deliveryByOcean">0 $</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Портовые сборы:</div>
+<div class="u-calc--inf-lists-value" id="portFee">0 $</div>
+</li>
+</ul>
+</div>
+
+<div class="u-calc--inf u-calc--registration">
+<div class="h4 u-calc--inf-title">Растаможка и оформление</div>
+<ul class="u-calc--inf-lists">
+<li>
+<div class="u-calc--inf-label">Таможенная пошлина:</div>
+<div class="u-calc--inf-lists-value" id="customsDuty">0 $</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Таможенный сбор:</div>
+<div class="u-calc--inf-lists-value" id="customsFee">0 BYN</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Утилизационный сбор:</div>
+<div class="u-calc--inf-lists-value" id="recyclingFee">0 BYN</div>
+</li>
+<li>
+<div class="u-calc--inf-label">Расходы на СВХ:</div>
+<div class="u-calc--inf-lists-value" id="storageFee">0 BYN</div>
+</li>
+</ul>
+</div>
+
+<div class="u-calc--result">
+<div class="u-calc--result-item">
+<div class="h4 u-calc--result-total">
+<span>Итого:</span> <span id="total">0 $</span>
+</div>
+<div class="u-calc--result-copyright">* Без учёта стоимости доставки Клайпеда (Поти) — Минск и комиссии за переводы</div>
+</div>
+<div class="u-calc--result-item">
+<div class="u-calc--result-copyright" id="rates"></div>
+<div class="u-calc--result-copyright">* Все расчёты являются приблизительными. Точную стоимость доставки вашего автомобиля можно узнать связавшись с нами по телефону или оставив заявку на сайте</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+	

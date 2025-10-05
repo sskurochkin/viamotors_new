@@ -1,0 +1,34 @@
+section.u-hero
+	.u-hero__bg
+		img(src=PATH + '/images/u-hero.png')
+	.container
+		.u-hero__content
+			h1 Авто из США под ключ
+			p Поможем с поиском авто, покупкой, транспортировкой в Беларусь, таможенным оформлением и постановкой на учет
+			.btn.btn--primary
+				span Заказать звонок
+include ./usa-order
+section.u-call
+	.u-call__bg
+		img(loading="lazy" src=PATH + 'images/u-call.webp')
+	.container
+		.u-call__inner
+			.u-title Заказать консультацию
+			p Получите консультацию по цене, с учетом затрат или по любому другому вопросу.
+include ./usa-serv
+include ./usa-calc
+section.map
+	.container
+		.u-title Наши контакты
+		br
+		#map
+			.map-wrapper
+				.map-label
+					.map-label__title Телефоны:
+					include ../modules/phones-list
+					br
+					.map-label__title Адрес:
+					.map-label__val г-п Ждановичи, ул. Заречная 50/1, 223028
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d928.3227249398581!2d27.439185380291548!3d53.95024803715498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc527d8af8aa1%3A0x5cdc93bb7c02e557!2sVIAMOTORS!5e0!3m2!1sru!2sby!4v1664699574370!5m2!1sru!2sby" width="100%" height="460" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+

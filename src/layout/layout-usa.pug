@@ -1,0 +1,86 @@
+include ../utility/_globalVars
+include ../utility/_mixins
+include ../utility/_functions
+
+block vars
+	- var pageTitle
+	- var pageBodyClass
+	- var dir
+
+- var componentsList = [] //список имен всех компонентов
+- var componentsCriticalList = [] // список имен компонентов, стили которых нужно подключить инлайного в head
+- var componentsScriptsList = [] // список имен компонентов, скрипты которых нужно подключить на страницу. они не должны подключаться в main.js
+- var vendorScriptsList = [] // список имен вендоров, скрипты которых нужно подключить на страницу. они не должны подключаться в main.js
+
+doctype html
+html(lang='ru-RU')
+	head
+		meta(charset='UTF-8')
+		meta(name='format-detection' content='telephone=no')
+		meta(name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0')
+
+		title= pageTitle
+		meta(name='description' content='✂️ Макетирование одежды с нуля! Онлайн-обучение от Татьяны Киреевой — простые объяснения, практика, разбор ошибок. Начните карьеру в дизайне одежды!')
+		<meta name="keywords" content="курс макетирования для начинающих, обучение шитью с нуля, как делать выкройки, основы конструирования одежды, онлайн курсы кройки и шитья, лекала для начинающих, школа Татьяны Киреевой, простые выкройки своими руками">
+		meta(name="robots" content="index, follow")
+		<meta property="og:title" content="ViaMotors | Оказане услуг по ремонту автомобилей">
+
+		<meta property="og:url" content="https://viamotors.by">
+
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://viamotors.by/assets/images/hero-bg-mob.jpeg">
+
+		<link rel="canonical" href="https://https://viamotors.by/">
+		link(rel="icon" type="image/png" href="/favicon.ico" sizes="48x48")
+		link(rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32")
+		link(rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16")
+		link(rel="apple-touch-icon" href="/favicons/apple-touch.png" sizes="180x180")
+		link(rel="apple-touch-icon" href="/favicons/android-chrome-192x192.png" sizes="192x192")
+		link(rel="apple-touch-icon" href="/favicons/android-chrome-512x512.png" sizes="512x512")
+		<link rel="manifest" href="/site.webmanifest">
+
+		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-regular.woff" as="font" type="font/woff2" crossorigin="anonymous")
+		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-600.woff" as="font" type="font/woff2" crossorigin="anonymous")
+		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-800.woff" as="font" type="font/woff2" crossorigin="anonymous")
+
+		//-Стили для всех страниц
+		link(href="./critical.css" rel="stylesheet")
+
+
+		block componentsCriticalStyles
+
+	body.theme-default(class=pageBodyClass)
+
+		.wrapper
+			include ../components/header/husa
+
+
+
+			main.main
+				block main
+
+			include ../components/footer/footer
+
+
+		//-include ../components/pages-viget/pages-viget
+
+		//-Либы, используемые на всех страницах
+
+		script(src="./assets/js/vendor/splide.min.js" defer)
+
+
+		block vendorScripts
+
+		block scripts
+
+		//-Скрипты для всех страниц
+		script(src="./assets/js/app.min.js" defer)
+
+		block componentsScripts
+
+
+
+		//-Стили компонентов этой страницы
+		block componentsStyles
+		//-script(src="./assets/js/alpinejs/alpine.min.js" defer)
+

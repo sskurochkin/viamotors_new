@@ -1,0 +1,24 @@
+extends ../../layout/layout-usa
+
+block vars
+	- var pageTitle = 'ViaMotors | Доставка автомобилей из Америки'
+	- var pageBodyClass = 'usa-page'
+	- var dir = ''
+
+
+
+block main
+	include ../../components/usa/usa
+
+
+
+block componentsCriticalStyles
+	+componentsCriticalStyles-includer()
+block vendorScripts
+	+vendorScripts-includer()
+block componentsStyles
+	+style-includer()
+block componentsScripts
+	+componentsScripts-includer()
+block scripts
+	

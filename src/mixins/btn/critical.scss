@@ -7,15 +7,26 @@
 	text-align: center;
 	text-decoration: none;
 	text-transform: none;
-	height: 4.8rem;
+	height: 48px;
 	border-radius: var(--radius);
 	font-weight: 500;
-	padding: 0 2.4rem;
+	padding: 0 20px;
 	transition: all ease .3s;
-	font-size: 2rem;
+	font-size: 18px;
 	&--primary{
 		color: #ffffff;
-		background-color: var(--base-color-hover);
+		background-color: var(--base-color);
+		&:hover {
+			@media (hover: hover) {
+				cursor: pointer;
+				color: var(--base-color);
+				border-color: var(--base-color);
+				background-color: #ffffff;
+			}
+		}
+	}
+	&--outline{
+		background-color: #fff;
 		&:hover {
 			@media (hover: hover) {
 				cursor: pointer;
@@ -24,6 +35,7 @@
 			}
 		}
 	}
+	
 	&--sm{
 		height: 3.6rem;
 		font-size: 1.4rem;
