@@ -1,0 +1,55 @@
++modal({
+	id: 'modal-message',
+	mod: 'modal-narrow modal-message',
+	title: 'Заказать звонок',
+	header: true
+})
+	.modal-inner
+		.modal-form
+			form.form-validate(action='./sendModal.php')
+
+				+input({
+					label: 'Ваше имя',
+					fg_mod: 'form-group--fw',
+					type: 'text',
+					id: 'nameModal',
+					name: 'name',
+					small: false,
+					placeholder: 'Ваше имя',
+					required: true,
+					validation: {
+						message: 'Заполните поле',
+						regexp: 'Неверный формат',
+						emailaddress: ' ',
+						identical: false
+					}
+				})
+
+				+input({
+					label: 'Ваш телефон',
+					type: 'tel',
+					id: 'phoneModal',
+					name: 'phone',
+					small: false,
+					placeholder: '+375 (__) ___ __ __',
+					required: true,
+					pattern: 'phone',
+					validation: {
+						message: 'Заполните поле',
+						regexp: 'Неверный формат',
+						emailaddress: ' ',
+						identical: false
+					}
+				})(data-mask="+375 (__) ___ __ __")
+
+
+				+textarea({
+					label: 'Ваше сообщение',
+					name: 'message',
+					mod: 'form-group--fw',
+					placeholder : 'Ваш комментарий'
+				})
+
+
+				button(type="submit").btn.btn--primary
+					span Отправить

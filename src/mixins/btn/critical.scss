@@ -16,6 +16,7 @@
 	&--primary{
 		color: #ffffff;
 		background-color: var(--base-color);
+		border: 1px solid var(--base-color);
 		&:hover {
 			@media (hover: hover) {
 				cursor: pointer;
@@ -27,6 +28,7 @@
 	}
 	&--outline{
 		background-color: #fff;
+		color: var(--base-color);
 		&:hover {
 			@media (hover: hover) {
 				cursor: pointer;

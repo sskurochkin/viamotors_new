@@ -51,7 +51,7 @@
             <div class="u-hero__content">
               <h1>Авто из США под ключ</h1>
               <p>Поможем с поиском авто, покупкой, транспортировкой в Беларусь, таможенным оформлением и постановкой на учет</p>
-              <div class="btn btn--primary"><span>Заказать звонок</span></div>
+              <div class="btn btn--primary" data-toggle="modal" data-target="#modal-message"><span>Заказать звонок</span></div>
             </div>
           </div>
         </section>
@@ -60,14 +60,14 @@
             <div class="u-title">Как мы работаем</div>
             <div class="u-subtitle">Процесс покупки авто с <strong>VIAMOTORS</strong></div>
             <div class="u-order-wrapper"><ul class="days-buy">
-<li data-tab="proc-s-1" class="">
+<li data-tab="proc-s-1" class="active">
 <div class="days-buy__dd">День 1-5</div>
-<div class="days-buy__name">Подбор</div>
+<div class="days-buy__name">Консультация</div>
 <div class="days-buy__txt">Осуществляем подбор авто опираясь на Ваши желания и бюджет</div>
 </li>
-<li data-tab="proc-s-2" class="active">
+<li data-tab="proc-s-2">
 <div class="days-buy__dd">День 6-7</div>
-<div class="days-buy__name">Проверка</div>
+<div class="days-buy__name">Заключение договора</div>
 <div class="days-buy__txt">Тщательная проверка в более чем 8 этапов</div>
 </li>
 <li data-tab="proc-s-3" class="">
@@ -101,22 +101,22 @@
 <div class="days-buy__txt">Поможем в постановке на учет в ГАИ</div>
 </li>
 </ul>
-<div class="car-proc proc-s-1">
+<div class="car-proc proc-s-1 active">
 <div class="car-proc__left">
 <img src="./assets/images/u-order.png" alt="Подбор">
 </div>
 <div class="car-proc__right">
-<div class="title-elem">Подбор</div>
-<p> В AutoCargo выбор автомобилей базируется на следующих ключевых аспектах: марка, модель, комплектация, пробег и техническое состояние машины. Клиенты имеют возможность лично подобрать автомобиль, проверив правдивость информации, полученной от аукциона. Правильное планирование бюджета становится ключом к выгодной покупке.                        </p>
+<div class="title-elem">Консультация</div>
+<p> Консультация</p>
 </div>
 </div>
-<div class="car-proc proc-s-2 active">
+<div class="car-proc proc-s-2 ">
 <div class="car-proc__left">
 <img src="./assets/images/u-order.png" alt="Проверка">
 </div>
 <div class="car-proc__right">
-<div class="title-elem">Проверка</div>
-<p> Выбранный клиентом автомобиль проходит детальную проверку на восьми этапах до покупки, включая CarFax, историю сделок, проверку надежности продавца и многие другие аспекты.                        </p>
+<div class="title-elem">Зключение договора</div>
+<p>Заключение договора</p>
 </div>
 </div>
 <div class="car-proc proc-s-3">
@@ -214,7 +214,7 @@
 <li>1 CarFax отчёт бесплатно</li>
 </ul>
 <div class="section-service--list--price">450 BYN</div>
-<button type="button" class="btn btn--outline" data-bs-toggle="modal" data-bs-target="#modalForm" data-bs-heading="Клиент выбрал услуг Standart">Оставить заявку</button>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Standart">Оставить заявку</div>
 </div>
 <div class="section-service--list middle">
 <div class="section-service--list--name">Lux</div>
@@ -232,7 +232,7 @@
 <li>Приятный и полезный подарок</li>
 </ul>
 <div class="section-service--list--price"><s style="padding-right:10px;">750 BYN</s><span style="color: var(--second-color);">375 BYN</span></div>
-<button type="button" class="btn btn--outline" data-bs-toggle="modal" data-bs-target="#modalForm" data-bs-heading="Клиент выбрал услуг VIP">Оставить заявку</button>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг VIP">Оставить заявку</div>
 </div>
 <div class="section-service--list">
 <div class="section-service--list--name">Premium</div>
@@ -250,7 +250,7 @@
 <li>Приятный и полезный подарок</li>
 </ul>
 <div class="section-service--list--price">1250 BYN</div>
-<button type="button" class="btn btn--outline" data-bs-toggle="modal" data-bs-target="#modalForm" data-bs-heading="Клиент выбрал услуг Premium">Оставить заявку</button>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Premium">Оставить заявку</div>
 </div>
 </div>
             </div>
@@ -383,10 +383,8 @@
 <div class="h4 u-calc--result-total">
 <span>Итого:</span> <span id="total">0 $</span>
 </div>
-<div class="u-calc--result-copyright">* Без учёта стоимости доставки Клайпеда (Поти) — Минск и комиссии за переводы</div>
 </div>
 <div class="u-calc--result-item">
-<div class="u-calc--result-copyright" id="rates"></div>
 <div class="u-calc--result-copyright">* Все расчёты являются приблизительными. Точную стоимость доставки вашего автомобиля можно узнать связавшись с нами по телефону или оставив заявку на сайте</div>
 </div>
 </div>
@@ -434,6 +432,63 @@
       </footer>
     </div>
     <script src="./assets/js/vendor/splide.min.js" defer></script>
+    <div class="modal fade modal-narrow modal-message" id="modal-message" tabindex="-1" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon" style="width: 26px; height: 26px;">
+              <use xlink:href="./assets/images/sprite.svg#i-close"></use>
+            </svg>
+          </button>
+          <div class="modal-header">
+            <div class="modal-title t3">Заказать звонок</div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-inner">
+              <div class="modal-form">
+                <form class="form-validate" action="./sendModal.php">
+                  <div class="form-group form-group--fw">
+                    <label class="form-control-label" for="nameModal">Ваше имя<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="text" id="nameModal" name="nameModal" placeholder="Ваше имя" required="required" data-bv-live="enabled" data-bv-notempty-message="Заполните поле" data-bv-regexp-message="Неверный формат" data-bv-stringLength-message=" " data-bv-emailaddress-message=" "/>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-control-label" for="phoneModal">Ваш телефон<span class="label-required">*</span>
+                    </label>
+                    <input class="form-control" type="tel" id="phoneModal" name="phoneModal" placeholder="+375 (__) ___ __ __" required="required" pattern="\+[0-9]{3} \([0-9]{2}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" data-bv-live="enabled" data-bv-notempty-message="Заполните поле" data-bv-regexp-message="Неверный формат" data-bv-stringLength-message=" " data-bv-emailaddress-message=" " data-mask="+375 (__) ___ __ __"/>
+                  </div>
+                  <div class="form-group form-group--fw">
+                    <label class="form-control-label" for="ID5877748386">Ваше сообщение
+                    </label>
+                    <textarea class="form-control" rows="3" id="ID5877748386" name="message" placeholder="Ваш комментарий"></textarea>
+                  </div>
+                  <button class="btn btn--primary" type="submit"><span>Отправить</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade modal-narrow modal-success" id="modal-success" tabindex="-1" aria-modal="true" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon" style="width: 26px; height: 26px;">
+              <use xlink:href="./assets/images/sprite.svg#i-close"></use>
+            </svg>
+          </button>
+          <div class="modal-header">
+            <div class="modal-title t3">Оставить заявку</div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-inner">
+              <div class="btn btn--primary" data-dismiss="modal"><span>Понятно</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/app.min.js" defer></script>
     
     
