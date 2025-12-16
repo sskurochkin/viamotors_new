@@ -357,13 +357,6 @@
     "warehouse": "CHICAGO"
   },
   {
-    "city": "D&D TOWING INC MAUI - Hawaii",
-    "large": 2400,
-    "oversize": 2700,
-    "moto": "clarify",
-    "warehouse": "LOS ANGELES"
-  },
-  {
     "city": "DALLAS - Texas",
     "large": 275,
     "oversize": 425,
@@ -383,13 +376,6 @@
     "oversize": 700,
     "moto": 400,
     "warehouse": "NEW YORK"
-  },
-  {
-    "city": "DC TOWING HILO - Hawaii",
-    "large": 2100,
-    "oversize": 2400,
-    "moto": "clarify",
-    "warehouse": "LOS ANGELES"
   },
   {
     "city": "DENVER - Colorado",
@@ -726,13 +712,6 @@
     "oversize": 450,
     "moto": 250,
     "warehouse": "NEW YORK"
-  },
-  {
-    "city": "LEE'S TOWING KAUAI - Hawaii",
-    "large": 2950,
-    "oversize": 3150,
-    "moto": "clarify",
-    "warehouse": "LOS ANGELES"
   },
   {
     "city": "LINCOLN - Illinois",
@@ -1349,13 +1328,6 @@
     "oversize": 525,
     "moto": 250,
     "warehouse": "NEW YORK"
-  },
-  {
-    "city": "WEST HAWAII TOWING & REPAIR INC KONA - Hawaii",
-    "large": 2300,
-    "oversize": 2450,
-    "moto": "clarify",
-    "warehouse": "LOS ANGELES"
   },
   {
     "city": "WEST PALM BEACH - Florida",

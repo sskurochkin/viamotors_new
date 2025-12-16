@@ -1141,9 +1141,9 @@ const uiInits = {
 					if (!responseUSD.ok) {
 						throw new Error(`Ошибка при загрузке данных USD: ${responseUSD.status}`);
 					}
-					// const usdData = await responseUSD.json();
-					// usdRate = getRateFromJson(usdData);
-					// usdToEur = eurRate / usdRate;
+					const usdData = await responseUSD.json();
+					usdRate = getRateFromJson(usdData);
+					usdToEur = eurRate / usdRate;
 					// console.log("Date Rate:", dateRate);
 					// console.log("USD Rate:", usdRate);
 					// console.log("EUR Rate:", eurRate);
@@ -1213,57 +1213,123 @@ const uiInits = {
 
 			}
 
-			function calculateAuctionFee(carCost) {
-				const feeTable = [
-					{ max: 100, buyerFee: 1, internetFee: 0 },
-					{ max: 200, buyerFee: 25, internetFee: 0 },
-					{ max: 300, buyerFee: 60, internetFee: 0 },
-					{ max: 350, buyerFee: 85, internetFee: 0 },
-					{ max: 400, buyerFee: 100, internetFee: 0 },
-					{ max: 450, buyerFee: 125, internetFee: 50 },
-					{ max: 500, buyerFee: 135, internetFee: 50 },
-					{ max: 550, buyerFee: 145, internetFee: 50 },
-					{ max: 600, buyerFee: 155, internetFee: 50 },
-					{ max: 700, buyerFee: 170, internetFee: 65 },
-					{ max: 800, buyerFee: 195, internetFee: 65 },
-					{ max: 900, buyerFee: 215, internetFee: 65 },
-					{ max: 1000, buyerFee: 230, internetFee: 65 },
-					{ max: 1200, buyerFee: 250, internetFee: 85 },
-					{ max: 1300, buyerFee: 270, internetFee: 85 },
-					{ max: 1400, buyerFee: 285, internetFee: 95 },
-					{ max: 1500, buyerFee: 300, internetFee: 95 },
-					{ max: 1600, buyerFee: 315, internetFee: 95 },
-					{ max: 1700, buyerFee: 330, internetFee: 95 },
-					{ max: 1800, buyerFee: 350, internetFee: 95 },
-					{ max: 2000, buyerFee: 370, internetFee: 95 },
-					{ max: 2400, buyerFee: 390, internetFee: 110 },
-					{ max: 2500, buyerFee: 425, internetFee: 110 },
-					{ max: 3000, buyerFee: 460, internetFee: 110 },
-					{ max: 3500, buyerFee: 505, internetFee: 125 },
-					{ max: 4000, buyerFee: 555, internetFee: 125 },
-					{ max: 4500, buyerFee: 600, internetFee: 125 },
-					{ max: 5000, buyerFee: 625, internetFee: 125 },
-					{ max: 5500, buyerFee: 650, internetFee: 145 },
-					{ max: 6000, buyerFee: 675, internetFee: 145 },
-					{ max: 6500, buyerFee: 700, internetFee: 145 },
-					{ max: 7000, buyerFee: 720, internetFee: 145 },
-					{ max: 7500, buyerFee: 755, internetFee: 145 },
-					{ max: 8000, buyerFee: 775, internetFee: 145 },
-					{ max: 8500, buyerFee: 800, internetFee: 160 },
-					{ max: 10000, buyerFee: 820, internetFee: 160 },
-					{ max: 11500, buyerFee: 850, internetFee: 160 },
-					{ max: 12000, buyerFee: 860, internetFee: 160 },
-					{ max: 12500, buyerFee: 875, internetFee: 160 },
-					{ max: 15000, buyerFee: 890, internetFee: 160 },
-					{ max: Infinity, buyerFee: (carCost * 6) / 100, internetFee: 160 },
-				];
-				const match = feeTable.find((item) => carCost <= item.max);
-				let buyerFee = match ? match.buyerFee : (carCost * 6) / 100;
-				let internetFee = match ? match.internetFee : 160;
-				const gateFee = 95;
-				const postFee = 20;
-				const securetyFee = 15;
-				return buyerFee + gateFee + internetFee + postFee + securetyFee;
+			function calculateAuctionFee(auctionPrice) {
+
+				let auctionFee1 = 0;
+				if (auctionPrice >= 0 && auctionPrice < 50) {
+					auctionFee1 = 1.00;
+				} else if (auctionPrice >= 50 && auctionPrice < 100) {
+					auctionFee1 = 1.00;
+				} else if (auctionPrice >= 100 && auctionPrice < 200) {
+					auctionFee1 = 25.00;
+				} else if (auctionPrice >= 200 && auctionPrice < 300) {
+					auctionFee1 = 60.00;
+				} else if (auctionPrice >= 300 && auctionPrice < 350) {
+					auctionFee1 = 80.00;
+				} else if (auctionPrice >= 350 && auctionPrice < 400) {
+					auctionFee1 = 90.00;
+				} else if (auctionPrice >= 400 && auctionPrice < 450) {
+					auctionFee1 = 120.00;
+				} else if (auctionPrice >= 450 && auctionPrice < 500) {
+					auctionFee1 = 130.00;
+				} else if (auctionPrice >= 500 && auctionPrice < 550) {
+					auctionFee1 = 140.00;
+				} else if (auctionPrice >= 550 && auctionPrice < 600) {
+					auctionFee1 = 150.00;
+				} else if (auctionPrice >= 600 && auctionPrice < 700) {
+					auctionFee1 = 165.00;
+				} else if (auctionPrice >= 700 && auctionPrice < 800) {
+					auctionFee1 = 185.00;
+				} else if (auctionPrice >= 800 && auctionPrice < 900) {
+					auctionFee1 = 200.00;
+				} else if (auctionPrice >= 900 && auctionPrice < 1000) {
+					auctionFee1 = 215.00;
+				} else if (auctionPrice >= 1000 && auctionPrice < 1200) {
+					auctionFee1 = 230.00;
+				} else if (auctionPrice >= 1200 && auctionPrice < 1300) {
+					auctionFee1 = 255.00;
+				} else if (auctionPrice >= 1300 && auctionPrice < 1400) {
+					auctionFee1 = 275.00;
+				} else if (auctionPrice >= 1400 && auctionPrice < 1500) {
+					auctionFee1 = 280.00;
+				} else if (auctionPrice >= 1500 && auctionPrice < 1600) {
+					auctionFee1 = 290.00;
+				} else if (auctionPrice >= 1600 && auctionPrice < 1700) {
+					auctionFee1 = 305.00;
+				} else if (auctionPrice >= 1700 && auctionPrice < 1800) {
+					auctionFee1 = 315.00;
+				} else if (auctionPrice >= 1800 && auctionPrice < 2000) {
+					auctionFee1 = 325.00;
+				} else if (auctionPrice >= 2000 && auctionPrice < 2400) {
+					auctionFee1 = 355.00;
+				} else if (auctionPrice >= 2400 && auctionPrice < 2500) {
+					auctionFee1 = 380.00;
+				} else if (auctionPrice >= 2500 && auctionPrice < 3000) {
+					auctionFee1 = 400.00;
+				} else if (auctionPrice >= 3000 && auctionPrice < 3500) {
+					auctionFee1 = 450.00;
+				} else if (auctionPrice >= 3500 && auctionPrice < 4000) {
+					auctionFee1 = 500.00;
+				} else if (auctionPrice >= 4000 && auctionPrice < 4500) {
+					auctionFee1 = 600.00;
+				} else if (auctionPrice >= 4500 && auctionPrice < 5000) {
+					auctionFee1 = 625.00;
+				} else if (auctionPrice >= 5000 && auctionPrice < 6000) {
+					auctionFee1 = 650.00;
+				} else if (auctionPrice >= 6000 && auctionPrice < 6500) {
+					auctionFee1 = 675.00;
+				} else if (auctionPrice >= 6500 && auctionPrice < 7000) {
+					auctionFee1 = 675.00;
+				} else if (auctionPrice >= 7000 && auctionPrice < 7500) {
+					auctionFee1 = 700.00;
+				} else if (auctionPrice >= 7500 && auctionPrice < 8000) {
+					auctionFee1 = 700.00;
+				} else if (auctionPrice >= 8000 && auctionPrice < 8500) {
+					auctionFee1 = 725.00;
+				} else if (auctionPrice >= 8500 && auctionPrice < 9000) {
+					auctionFee1 = 725.00;
+				} else if (auctionPrice >= 9000 && auctionPrice < 10000) {
+					auctionFee1 = 725.00;
+				} else if (auctionPrice >= 10000 && auctionPrice < 10500) {
+					auctionFee1 = 750.00;
+				} else if (auctionPrice >= 10500 && auctionPrice < 11000) {
+					auctionFee1 = 750.00;
+				} else if (auctionPrice >= 11000 && auctionPrice < 11500) {
+					auctionFee1 = 750.00;
+				} else if (auctionPrice >= 11500 && auctionPrice < 12000) {
+					auctionFee1 = 760.00;
+				} else if (auctionPrice >= 12000 && auctionPrice < 12500) {
+					auctionFee1 = 775.00;
+				} else if (auctionPrice >= 12500 && auctionPrice < 15000) {
+					auctionFee1 = 790.00;
+				} else if (auctionPrice >= 15000) {
+					auctionFee1 = auctionPrice * 0.06;
+				} else {
+					console.error("РћС€РёР±РєР°: РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ С†РµРЅС‹ Р°СѓРєС†РёРѕРЅР°.");
+				}
+
+				let auctionFee2 = 0;
+				if (auctionPrice >= 0 && auctionPrice <= 100) {
+					auctionFee2 = 0;
+				} else if (auctionPrice >= 100 && auctionPrice < 500) {
+					auctionFee2 = 49;
+				} else if (auctionPrice >= 500 && auctionPrice < 1000) {
+					auctionFee2 = 59;
+				} else if (auctionPrice >= 1000 && auctionPrice < 1500) {
+					auctionFee2 = 79;
+				} else if (auctionPrice >= 1500 && auctionPrice < 2000) {
+					auctionFee2 = 89;
+				} else if (auctionPrice >= 2000 && auctionPrice < 4000) {
+					auctionFee2 = 99;
+				} else if (auctionPrice >= 4000 && auctionPrice < 6000) {
+					auctionFee2 = 109;
+				} else if (auctionPrice >= 6000 && auctionPrice < 8000) {
+					auctionFee2 = 139;
+				} else {
+					auctionFee2 = 149;
+				}
+
+				return auctionFee1 + auctionFee2 + 10 + 79
 			}
 
 			function calculateDuty(vehicleAge, engineVolume, carCost) {
@@ -1326,25 +1392,28 @@ const uiInits = {
 				}
 
 				const oceanDeliveryGR = [
-					{ warehouse: "NEW JERSEY", priceSedan: 1500, priceBigSuv: 1850, priceMoto: 700 },
-					{ warehouse: "GEORGIA", priceSedan: 1500, priceBigSuv: 1775, priceMoto: 700 },
-					{ warehouse: "TEXAS", priceSedan: 1680, priceBigSuv: 2150, priceMoto: 700 },
-					{ warehouse: "CALIFORNIA", priceSedan: 2150, priceBigSuv: 2750, priceMoto: 750 },
-					{ warehouse: "CHICAGO", priceSedan: 1700, priceBigSuv: 2200, priceMoto: 750 },
-					{ warehouse: "SEATTLE", priceSedan: 2100, priceBigSuv: 2900, priceMoto: 950 },
+					{ warehouse: "NEW YORK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
+					{ warehouse: "NORFOLK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
+					{ warehouse: "SAVANNAH", priceSedan: 800, priceLarge: 900, priceBigSuv: 1250, priceMoto: 400},
+					{ warehouse: "MIAMI", priceSedan: 900, priceLarge: 1000, priceBigSuv: 1300, priceMoto: 425},
+					{ warehouse: "HOUSTON", priceSedan: 975, priceLarge: 1075, priceBigSuv: 1400, priceMoto: 450},
+					{ warehouse: "CHICAGO", priceSedan: 1000, priceLarge: 1100, priceBigSuv: 1450, priceMoto: 475},
+					{ warehouse: "LOS ANGELES", priceSedan: 1500, priceLarge: 1600, priceBigSuv: 1950, priceMoto: 750},
+					{ warehouse: "SEATTLE", priceSedan: 1400, priceLarge: 1500, priceBigSuv: 2400, priceMoto: 800},
+					{ warehouse: "TORONTO", priceSedan: 1200, priceLarge: 1350, priceBigSuv: 1650, priceMoto: 525},
 				];
 
 
 				const oceanDeliveryLT = [
-					{ warehouse: "NEW YORK", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
-					{ warehouse: "NORFOLK", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
-					{ warehouse: "SAVANNAH", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
-					{ warehouse: "MIAMI", priceSedan: 775, priceBigSuv: 1075, priceMoto: 400 },
-					{ warehouse: "GEORGIA", priceSedan: 1195, priceBigSuv: 1625, priceMoto: 595 },
-					{ warehouse: "TEXAS", priceSedan: 1335, priceBigSuv: 1625, priceMoto: 595 },
-					{ warehouse: "CALIFORNIA", priceSedan: 1750, priceBigSuv: 2225, priceMoto: 650 },
-					{ warehouse: "CHICAGO", priceSedan: 1475, priceBigSuv: 1775, priceMoto: 650 },
-					{ warehouse: "SEATTLE", priceSedan: 2175, priceBigSuv: 2725, priceMoto: 1100 },
+					{ warehouse: "NEW YORK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{ warehouse: "NORFOLK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{ warehouse: "SAVANNAH", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{ warehouse: "MIAMI", priceSedan: 775, priceLarge: 825, priceBigSuv: 1075, priceMoto: 400},
+					{ warehouse: "HOUSTON", priceSedan: 825, priceLarge: 875, priceBigSuv: 1200, priceMoto: 425},
+					{ warehouse: "CHICAGO", priceSedan: 900, priceLarge: 950, priceBigSuv: 1250, priceMoto: 425},
+					{ warehouse: "LOS ANGELES", priceSedan: 1300, priceLarge: 1350, priceBigSuv: 1700, priceMoto: 550},
+					{ warehouse: "SEATTLE", priceSedan: 1700, priceLarge: 1800, priceBigSuv: 2400, priceMoto: 750},
+					{ warehouse: "TORONTO", priceSedan: 1000, priceLarge: 1050, priceBigSuv: 1350, priceMoto: 500},
 				];
 				if (type === "sedan") {
 					console.log("Run type sedan");
@@ -1367,12 +1436,12 @@ const uiInits = {
 					} else {
 						return oceanDeliveryLT.find((item) => item.warehouse === usaDeliveryRow.warehouse).priceMoto;
 					}
-				} else {
-					console.log("Run type else");
+				} else if (type === "large") {
+					console.log("Run type large");
 					if (port === "georgia") {
-						return oceanDeliveryGR.find((item) => item.warehouse === usaDeliveryRow.warehouse).priceSedan * 2;
+						return oceanDeliveryGR.find((item) => item.warehouse === usaDeliveryRow.warehouse).priceLarge;
 					} else {
-						return oceanDeliveryLT.find((item) => item.warehouse === usaDeliveryRow.warehouse).priceSedan * 2;
+						return oceanDeliveryLT.find((item) => item.warehouse === usaDeliveryRow.warehouse).priceLarge;
 					}
 				}
 			}
@@ -1432,6 +1501,8 @@ const uiInits = {
 				const gibrid = document.getElementById("gibrid").checked;
 				const insurance = document.getElementById("insurance").checked;
 
+				if(!lotLocation) return
+
 				let usaDeliveryRow;
 				let deliveryToPort;
 
@@ -1439,7 +1510,7 @@ const uiInits = {
 				if ( carType === 'sedan' ) {
 					deliveryToPort = usaDeliveryRow?.['large'] || 0;
 				}
-				if ( carType === 'pickUp' || carType === 'big' ) {
+				if ( carType === 'large' || carType === 'big' ) {
 					deliveryToPort = usaDeliveryRow?.['oversize'] || 0;
 				}
 				if ( carType === 'moto' ) {
@@ -1473,15 +1544,19 @@ const uiInits = {
 				let portFee = 150;
 				const customsFee = 120;
 				const storageFee = 400;
-				let total = carCost + fireContainer + auctionFee + deliveryToPort + deliveryByOcean + portFee + customsDuty * usdToEur + (customsFee + recyclingFee + storageFee) / usdRate;
+				console.log(usdRate)
+				let costToMinsk = port === 'georgia'  ? 2700 : 960
+				let total = costToMinsk + carCost + fireContainer + auctionFee + deliveryToPort + deliveryByOcean + portFee + customsDuty * usdToEur + (customsFee + recyclingFee + storageFee) / usdRate;
 				if (insurance) {
 					total += total * 0.03;
 				}
+
 				document.getElementById("purchaseCost").textContent = `${carCost} $`;
 				document.getElementById("auctionFee").textContent = `${auctionFee.toFixed(0)} $`;
-				document.getElementById("deliveryToPort").textContent = `${deliveryToPort} $`;
-				document.getElementById("usaPortName").textContent = `Транспортировка в порт ${usaPortName}:`;
-				document.getElementById("deliveryByOcean").textContent = `${deliveryByOcean} $`;
+				// document.getElementById("deliveryToPort").textContent = `${deliveryToPort} $`;
+				// document.getElementById("usaPortName").textContent = `Транспортировка в порт ${usaPortName}:`;
+				// document.getElementById("deliveryByOcean").textContent = `${deliveryByOcean} $`;
+				document.getElementById("deliveryToMinsk").textContent = `${costToMinsk} $`;
 				document.getElementById("portFee").textContent = `${portFee} $`;
 				document.getElementById("customsDuty").textContent = `${customsDuty.toFixed(0)} €`;
 				document.getElementById("customsFee").textContent = `${customsFee} BYN`;

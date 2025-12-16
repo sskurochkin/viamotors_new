@@ -45,9 +45,9 @@
 <div class="u-calc--form-field">
 <label for="delivery" class="u-calc--form-label">Тип транспортного средства</label>
 <select id="carType" name="carType">
-<option value="sedan">(REGULAR) Седан / Кроссовер</option>
-<option value="big">Внедорожник</option>
-<option value="pickUp">Пикап</option>
+<option value="sedan">REGULAR (Седан)</option>
+<option value="large">LARGE (Кроссовер)</option>
+<option value="big">OVERSIZE (Внедорожник)</option>
 <option value="moto">Мотоцикл</option>
 </select>
 </div>
@@ -91,14 +91,18 @@
 <div class="u-calc--inf-lists-value" id="auctionFee">0 $</div>
 </li>
 <li>
-<div class="u-calc--inf-label" id="usaPortName">Транспортировка в порт:</div>
-<div class="u-calc--inf-lists-value" id="deliveryToPort">0 $</div>
+<div class="u-calc--inf-label">Доставка до Минска:</div>
+<div class="u-calc--inf-lists-value" id="deliveryToMinsk">0 $</div>
 </li>
-<li>
-<div class="u-calc--inf-label">Доставка по морю:</div>
-<div class="u-calc--inf-lists-value" id="deliveryByOcean">0 $</div>
-</li>
-<li>
+<li class="hidden">
+//<div class="u-calc--inf-label" id="usaPortName">Транспортировка в порт:</div>
+//<div class="u-calc--inf-lists-value" id="deliveryToPort">0 $</div>
+//</li>
+//<li>
+//<div class="u-calc--inf-label">Доставка по морю:</div>
+//<div class="u-calc--inf-lists-value" id="deliveryByOcean">0 $</div>
+//</li>
+//<li>
 <div class="u-calc--inf-label">Портовые сборы:</div>
 <div class="u-calc--inf-lists-value" id="portFee">0 $</div>
 </li>

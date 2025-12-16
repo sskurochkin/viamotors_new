@@ -299,9 +299,9 @@
 <div class="u-calc--form-field">
 <label for="delivery" class="u-calc--form-label">Тип транспортного средства</label>
 <select id="carType" name="carType">
-<option value="sedan">(REGULAR) Седан / Кроссовер</option>
-<option value="big">Внедорожник</option>
-<option value="pickUp">Пикап</option>
+<option value="sedan">REGULAR (Седан)</option>
+<option value="large">LARGE (Кроссовер)</option>
+<option value="big">OVERSIZE (Внедорожник)</option>
 <option value="moto">Мотоцикл</option>
 </select>
 </div>
@@ -344,15 +344,18 @@
 <div class="u-calc--inf-lists-value" id="auctionFee">0 $</div>
 </li>
 <li>
-<div class="u-calc--inf-label" id="usaPortName">Транспортировка в порт:</div>
-<div class="u-calc--inf-lists-value" id="deliveryToPort">0 $</div>
+<div class="u-calc--inf-label">Доставка до Минска:</div>
+<div class="u-calc--inf-lists-value" id="deliveryToMinsk">0 $</div>
 </li>
-<li>
-<div class="u-calc--inf-label">Доставка по морю:</div>
-<div class="u-calc--inf-lists-value" id="deliveryByOcean">0 $</div>
-</li>
-<li>
-<div class="u-calc--inf-label">Портовые сборы:</div>
+<li class="hidden">
+        <!--<div class="u-calc--inf-label" id="usaPortName">Транспортировка в порт:</div>-->
+        <!--<div class="u-calc--inf-lists-value" id="deliveryToPort">0 $</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="u-calc--inf-label">Доставка по морю:</div>-->
+        <!--<div class="u-calc--inf-lists-value" id="deliveryByOcean">0 $</div>-->
+        <!--</li>-->
+        <!--<li>--><div class="u-calc--inf-label">Портовые сборы:</div>
 <div class="u-calc--inf-lists-value" id="portFee">0 $</div>
 </li>
 </ul>
@@ -458,9 +461,9 @@
                     <input class="form-control" type="tel" id="phoneModal" name="phoneModal" placeholder="+375 (__) ___ __ __" required="required" pattern="\+[0-9]{3} \([0-9]{2}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" data-bv-live="enabled" data-bv-notempty-message="Заполните поле" data-bv-regexp-message="Неверный формат" data-bv-stringLength-message=" " data-bv-emailaddress-message=" " data-mask="+375 (__) ___ __ __"/>
                   </div>
                   <div class="form-group form-group--fw">
-                    <label class="form-control-label" for="ID9694285861">Ваше сообщение
+                    <label class="form-control-label" for="ID4968084048">Ваше сообщение
                     </label>
-                    <textarea class="form-control" rows="3" id="ID9694285861" name="message" placeholder="Ваш комментарий"></textarea>
+                    <textarea class="form-control" rows="3" id="ID4968084048" name="message" placeholder="Ваш комментарий"></textarea>
                   </div>
                   <button class="btn btn--primary" type="submit"><span>Отправить</span></button>
                 </form>

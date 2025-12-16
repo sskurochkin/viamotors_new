@@ -1,1997 +1,1507 @@
 [
   {
-    "city": "NJ - Avenelsdfsdfsdf",
-    "large": 400,
-    "oversize": 600,
-    "moto": 300,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Central New Jersey",
-    "large": 400,
-    "oversize": 600,
-    "moto": 300,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Englishtown",
-    "large": 380,
-    "oversize": 550,
-    "moto": 280,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Glassboro",
-    "large": 450,
-    "oversize": 750,
-    "moto": 350,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Port Murray",
-    "large": 425,
-    "oversize": 725,
-    "moto": 325,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Sayreville",
-    "large": 400,
-    "oversize": 650,
-    "moto": 300,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Somerville",
-    "large": 410,
-    "oversize": 610,
-    "moto": 310,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Southern New Jersey",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NJ - Trenton",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Altoona",
-    "large": 700,
-    "oversize": 900,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Bridgeport",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Chambersburg",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Erie",
-    "large": 750,
-    "oversize": 900,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Harrisburg",
-    "large": 525,
-    "oversize": 725,
-    "moto": 400,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Philadelphia",
-    "large": 470,
-    "oversize": 670,
-    "moto": 370,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Philadelphia East-Sublot",
-    "large": 470,
-    "oversize": 670,
-    "moto": 370,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Pittsburgh",
-    "large": 650,
-    "oversize": 750,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Pittsburgh North",
-    "large": 650,
-    "oversize": 750,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Pittsburgh South",
-    "large": 650,
-    "oversize": 750,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Pittsburgh West",
-    "large": 650,
-    "oversize": 750,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - Scranton",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - York Haven",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "PA - York Springs",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Baltimore",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Baltimore East",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Dundalk",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Laurel",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Metro DC",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MD - Washington DC",
-    "large": 600,
-    "oversize": 800,
-    "moto": 475,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - Freetown",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - North Boston",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - Boston-Shirley",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - South Boston",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - Taunton",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - Templeton",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MA - West Warren",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "CT - Hartford",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "CT - Hartford South",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "CT - Hartford Springfield",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "DE - New Castle",
-    "large": 500,
-    "oversize": 700,
-    "moto": 375,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "DE - Seaford",
-    "large": 575,
-    "oversize": 775,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Chicago North",
-    "large": 400,
-    "oversize": 600,
-    "moto": 300,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Chicago South",
-    "large": 430,
-    "oversize": 630,
-    "moto": 300,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Chicago West - Aurora",
-    "large": 400,
-    "oversize": 600,
-    "moto": 300,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Lincoln",
-    "large": 550,
-    "oversize": 750,
-    "moto": 400,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Peoria",
-    "large": 550,
-    "oversize": 750,
-    "moto": 400,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Specialty Division",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - St. Louis",
-    "large": 775,
-    "oversize": 975,
-    "moto": 600,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Southern Illinois (East St. Louis)",
-    "large": 775,
-    "oversize": 975,
-    "moto": 600,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Westchester",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IL - Wheeling",
-    "large": 400,
-    "oversize": 600,
-    "moto": 350,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - Cicero",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - Dyer",
-    "large": 400,
-    "oversize": 600,
-    "moto": 300,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - Fort Wayne",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - Indianapolis",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - Indianapolis South",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IN - South Bend",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IA - Davenport",
-    "large": 575,
-    "oversize": 775,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "IA - Des Moines",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "ME - Clinton",
-    "large": 680,
-    "oversize": 880,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "ME - Gorham",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "ME - Gray",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "ME - Lyman",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "MI - Detroit",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MI - Flint",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MI - Grand Rapids",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MI - Ionia",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MI - Kincheloe",
-    "large": 1000,
-    "oversize": 1200,
-    "moto": 890,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MI - Lansing",
-    "large": 625,
-    "oversize": 825,
-    "moto": 525,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MN - Minneapolis",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MN - Minneapolis North",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MN - Saint Cloud",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MN - Saint Paul",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "NE - Lincoln",
-    "large": 700,
-    "oversize": 900,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "NE - Omaha",
-    "large": 700,
-    "oversize": 900,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "NH - Candia",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NH - Manchester",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Albany",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Buffalo",
-    "large": 750,
-    "oversize": 950,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Long Island",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Newburgh",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Rochester",
-    "large": 700,
-    "oversize": 900,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "NY - Syracuse",
-    "large": 575,
-    "oversize": 775,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "ND - Bismarck",
-    "large": 1075,
-    "oversize": 1615,
-    "moto": 975,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "ND - Fargo",
-    "large": 850,
-    "oversize": 1050,
-    "moto": 750,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "OH - Akron-Canton",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Cincinnati",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Cincinnati South",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Cleveland",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Cleveland East",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Cleveland West",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Columbus",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "OH - Dayton",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "RI - Exeter",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "RI - Providence",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VT - Burlington",
-    "large": 725,
-    "oversize": 925,
-    "moto": 650,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Culpeper",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Danville",
-    "large": 625,
-    "oversize": 825,
-    "moto": 530,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Fredericksburg",
-    "large": 575,
-    "oversize": 775,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Hampton",
-    "large": 600,
-    "oversize": 800,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - North Virginia",
-    "large": 525,
-    "oversize": 725,
-    "moto": 450,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Pulaski",
-    "large": 625,
-    "oversize": 825,
-    "moto": 525,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Richmond",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Richmond East",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Roanoke",
-    "large": 675,
-    "oversize": 875,
-    "moto": 550,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Suffolk",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "VA - Tidewater",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "WV - Buckhannon",
-    "large": 825,
-    "oversize": 1025,
-    "moto": 700,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "WV - Charleston",
-    "large": 825,
-    "oversize": 1025,
-    "moto": 700,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "WV - Shady Spring",
-    "large": 825,
-    "oversize": 1025,
-    "moto": 700,
-    "warehouse": "NEW JERSEY"
-  },
-  {
-    "city": "WI - Appleton",
-    "large": 575,
-    "oversize": 775,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "WI - Madison",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "WI - Madison South",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "WI - Milwaukee",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "WI - Milwaukee North",
-    "large": 475,
-    "oversize": 675,
-    "moto": 375,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "WI - Portage",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Ashland",
-    "large": 750,
-    "oversize": 950,
-    "moto": 650,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Bowling Green",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Earlington",
-    "large": 785,
-    "oversize": 985,
-    "moto": 650,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Lexington East",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Lexington West",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Louisville",
-    "large": 675,
-    "oversize": 875,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Louisville North",
-    "large": 675,
-    "oversize": 875,
-    "moto": 500,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Paducah",
-    "large": 725,
-    "oversize": 925,
-    "moto": 600,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "KY - Walton",
-    "large": 675,
-    "oversize": 875,
-    "moto": 525,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "AL - Birmingham",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Dothan",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Huntsville",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Mobile (Eight Mile)",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Mobile South",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Montgomery",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "AL - Tanner",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Atlanta",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Atlanta East",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Atlanta North",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Atlanta South",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Atlanta West",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Cartersville",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Fairburn",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Macon",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "GA - Savannah",
+    "city": "ABILENE - Texas",
     "large": 350,
-    "oversize": 550,
+    "oversize": 500,
     "moto": 300,
-    "warehouse": "GEORGIA"
+    "warehouse": "HOUSTON"
   },
   {
-    "city": "GA - Tifton",
-    "large": 500,
+    "city": "ADELANTO - California",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "ADP TOWING MAUI - Hawaii",
+    "large": 2250,
+    "oversize": 2400,
+    "moto": 2100,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "AKRON - Ohio",
+    "large": 550,
     "oversize": 700,
     "moto": 400,
-    "warehouse": "GEORGIA"
+    "warehouse": "NEW YORK"
   },
   {
-    "city": "FL - Clearwater",
+    "city": "ALBANY - New York",
+    "large": 275,
+    "oversize": 425,
+    "moto": 225,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "ALBUQUERQUE - New Mexico",
+    "large": 600,
+    "oversize": 750,
+    "moto": 400,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "ALTOONA - Pennsylvania",
+    "large": 450,
+    "oversize": 600,
+    "moto": 325,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "AMARILLO - Texas",
     "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Fort Myers",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Fort Pierce",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Jacksonville (North - Copart)",
-    "large": 475,
     "oversize": 675,
     "moto": 375,
-    "warehouse": "GEORGIA"
+    "warehouse": "HOUSTON"
   },
   {
-    "city": "FL - Miami",
-    "large": 600,
-    "oversize": 800,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Miami North",
-    "large": 600,
-    "oversize": 800,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Miami South",
-    "large": 600,
-    "oversize": 800,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Ocala",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Orlando",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Orlando North",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Pensacola",
-    "large": 625,
-    "oversize": 825,
-    "moto": 525,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Punta Gorda",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Tallahassee",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Tampa",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Tampa North",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - Tampa South",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "FL - West Palm Beach",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Asheville",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Charlotte",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - China Grove",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Concord",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Gastonia",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Greensboro",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Lumberton",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Mebane",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Mocksville",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Raleigh",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Raleigh North",
-    "large": 525,
-    "oversize": 725,
-    "moto": 475,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NC - Wilmington",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Charleston",
-    "large": 525,
-    "oversize": 725,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Charleston North",
-    "large": 525,
-    "oversize": 725,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Columbia",
-    "large": 525,
-    "oversize": 725,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Greenville",
-    "large": 500,
-    "oversize": 700,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Lexington",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "SC - Spartanburg",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "TN - Chattanooga",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "TN - Knoxville",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "TN - Memphis",
-    "large": 700,
-    "oversize": 900,
-    "moto": 600,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "TN - Nashville",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - Columbia",
-    "large": 620,
-    "oversize": 820,
-    "moto": 520,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - Kansas City East",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - Sikeston",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - Springfield",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 610,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - St. Louis",
-    "large": 775,
-    "oversize": 975,
-    "moto": 610,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MO - Columbia",
-    "large": 620,
-    "oversize": 820,
-    "moto": 520,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MO - Kansas City East",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MO - Sikeston",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MO - Springfield",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 610,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MO - St. Louis",
-    "large": 775,
-    "oversize": 975,
-    "moto": 610,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "MS - Grenada",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MS - Gulf Coast",
-    "large": 575,
-    "oversize": 775,
-    "moto": 550,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "MS - Jackson",
-    "large": 625,
-    "oversize": 825,
-    "moto": 525,
-    "warehouse": "GEORGIA"
-  },
-  {
-    "city": "NE - Lincoln",
-    "large": 700,
-    "oversize": 900,
-    "moto": 525,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "NE - Omaha",
-    "large": 700,
-    "oversize": 900,
-    "moto": 550,
-    "warehouse": "CHICAGO"
-  },
-  {
-    "city": "AR - Fayetteville",
-    "large": 725,
-    "oversize": 925,
-    "moto": 625,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "AR - Little Rock",
-    "large": 700,
-    "oversize": 900,
-    "moto": 600,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "KS - Kansas City",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 600,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "KS - Wichita",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 700,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "LA - Baton Rouge",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "LA - Lafayette",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "LA - New Orleans",
-    "large": 575,
-    "oversize": 775,
-    "moto": 475,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "LA - New Orleans East",
-    "large": 575,
-    "oversize": 775,
-    "moto": 475,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "LA - Shreveport",
-    "large": 565,
-    "oversize": 765,
-    "moto": 465,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "OK - Oklahoma City",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "OK - Tulsa",
-    "large": 725,
-    "oversize": 925,
-    "moto": 625,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Abilene",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Amarillo",
-    "large": 775,
-    "oversize": 975,
-    "moto": 675,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Andrews",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Austin",
-    "large": 500,
-    "oversize": 700,
-    "moto": 400,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Corpus Christi",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Crashedtoys Dallas",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Dallas",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Dallas South",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - El Paso",
-    "large": 675,
-    "oversize": 875,
-    "moto": 575,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Fort Worth",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Fort Worth North",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Houston",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Houston East",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Houston North",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Houston South",
-    "large": 450,
-    "oversize": 650,
-    "moto": 350,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Longview",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Lubbock",
-    "large": 700,
-    "oversize": 900,
-    "moto": 550,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Lufkin",
-    "large": 525,
-    "oversize": 725,
-    "moto": 425,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - McAllen",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Permian Basin",
-    "large": 700,
-    "oversize": 900,
-    "moto": 600,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - San Antonio (South)",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "TX - Waco",
-    "large": 575,
-    "oversize": 775,
-    "moto": 475,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "AZ - Phoenix",
-    "large": 600,
-    "oversize": 800,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "AZ - Tucson",
-    "large": 650,
-    "oversize": 850,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Adelanto",
-    "large": 525,
-    "oversize": 725,
-    "moto": 450,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Anaheim",
-    "large": 430,
-    "oversize": 630,
-    "moto": 350,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Antelope",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Bakersfield",
-    "large": 550,
-    "oversize": 750,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Carson",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Colton",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - East Bay",
-    "large": 650,
-    "oversize": 850,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Fontana",
-    "large": 430,
-    "oversize": 630,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Fremont",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Fresno",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Hayward",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - High Desert",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Long Beach",
-    "large": 380,
-    "oversize": 580,
-    "moto": 300,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Los Angeles",
-    "large": 400,
-    "oversize": 600,
-    "moto": 350,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Los Angeles South",
-    "large": 400,
-    "oversize": 600,
-    "moto": 350,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Martinez",
-    "large": 650,
-    "oversize": 850,
-    "moto": 500,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - North Hollywood",
-    "large": 430,
-    "oversize": 630,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Perris",
-    "large": "request price",
-    "oversize": "request price",
-    "moto": "request price",
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Rancho Cucamonga",
-    "large": 430,
-    "oversize": 630,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Redding",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 800,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Sacramento",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - San Bernardino",
-    "large": 450,
-    "oversize": 650,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - San Diego",
-    "large": 450,
-    "oversize": 650,
-    "moto": 400,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - San Jose",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - South Sacramento",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Sun Valley",
-    "large": 430,
-    "oversize": 630,
-    "moto": 350,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Vallejo",
-    "large": 650,
-    "oversize": 850,
-    "moto": 550,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CA - Van Nuys",
-    "large": 430,
-    "oversize": 630,
-    "moto": 380,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Colorado Springs",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 800,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Denver",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Denver Central",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Denver East",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Denver South",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "CO - Western Colorado",
-    "large": 1100,
-    "oversize": 1300,
-    "moto": 800,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "NM - Albuquerque",
-    "large": 850,
-    "oversize": 1050,
-    "moto": 650,
-    "warehouse": "TEXAS"
-  },
-  {
-    "city": "ID - Boise",
-    "large": 700,
-    "oversize": 900,
-    "moto": 600,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "MT - Billings",
-    "large": 1050,
-    "oversize": 1250,
-    "moto": 1000,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "MT - Helena",
-    "large": 950,
-    "oversize": 1150,
-    "moto": 900,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "MT - Missoula",
-    "large": 850,
-    "oversize": 1050,
-    "moto": 800,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "NV - Las Vegas",
-    "large": 550,
-    "oversize": 750,
-    "moto": 450,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "NV - Reno",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "UT - Ogden",
-    "large": 800,
-    "oversize": 1000,
-    "moto": 700,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "UT - Salt Lake City",
-    "large": 900,
-    "oversize": 1100,
-    "moto": 800,
-    "warehouse": "CALIFORNIA"
-  },
-  {
-    "city": "WY - Casper",
-    "large": 1450,
-    "oversize": 1650,
-    "moto": 1300,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "OR - Eugene",
-    "large": 625,
-    "oversize": 825,
-    "moto": 500,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "OR - Portland",
-    "large": 475,
-    "oversize": 675,
-    "moto": 425,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "OR - Portland North",
-    "large": 475,
-    "oversize": 675,
-    "moto": 425,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "OR - Portland South",
-    "large": 475,
-    "oversize": 675,
-    "moto": 425,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "OR - Portland West",
-    "large": 475,
-    "oversize": 675,
-    "moto": 425,
-    "warehouse": "SEATTLE"
-  },
-  {
-    "city": "WA - Graham",
-    "large": 375,
+    "city": "ANDREWS - Texas",
+    "large": 425,
     "oversize": 575,
+    "moto": 350,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "ANTELOPE - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "APPLETON - Wisconsin",
+    "large": 375,
+    "oversize": 525,
+    "moto": 325,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "ATLANTA EAST - Georgia",
+    "large": 350,
+    "oversize": 500,
+    "moto": 300,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "ATLANTA NORTH - Georgia",
+    "large": 325,
+    "oversize": 475,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "ATLANTA SOUTH - Georgia",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "ATLANTA WEST - Georgia",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "AUSTIN - Texas",
+    "large": 250,
+    "oversize": 400,
+    "moto": 175,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "Augusta - Georgia",
+    "large": 275,
+    "oversize": 425,
+    "moto": 225,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "BAKERSFIELD - California",
+    "large": 350,
+    "oversize": 500,
+    "moto": 250,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "BALTIMORE - Maryland",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "BALTIMORE EAST - Maryland",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "BATON ROUGE - Louisiana",
+    "large": 350,
+    "oversize": 500,
+    "moto": 275,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "BILLINGS - Montana",
+    "large": 850,
+    "oversize": 1000,
+    "moto": 850,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "BIRMINGHAM - Alabama",
+    "large": 375,
+    "oversize": 525,
+    "moto": 325,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "BISMARCK - North Dakota",
+    "large": 850,
+    "oversize": 1000,
+    "moto": 775,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "BOISE - Idaho",
+    "large": 450,
+    "oversize": 600,
+    "moto": 450,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "Buffalo - New York",
+    "large": 500,
+    "oversize": 650,
+    "moto": 375,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CANDIA - New Hampshire",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CARTERSVILLE - Georgia",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "CASPER WEST - Wyoming",
+    "large": 1350,
+    "oversize": 1500,
+    "moto": 1250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CHAMBERSBURG - Pennsylvania",
+    "large": 350,
+    "oversize": 500,
+    "moto": 300,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CHARLESTON - West Virginia",
+    "large": 625,
+    "oversize": 775,
+    "moto": 500,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CHICAGO NORTH - Illinois",
+    "large": 180,
+    "oversize": 330,
+    "moto": 180,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CHICAGO SOUTH - Illinois",
+    "large": 180,
+    "oversize": 330,
+    "moto": 180,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CHICAGO SOUTH-Woodmar/Heights sublot - Illinois",
+    "large": 180,
+    "oversize": 330,
+    "moto": 180,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CHINA GROVE - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CICERO - Indiana",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CLEVELAND EAST - Ohio",
+    "large": 550,
+    "oversize": 700,
+    "moto": 400,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CLEVELAND WEST - Ohio",
+    "large": 550,
+    "oversize": 700,
+    "moto": 400,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "COLORADO SPRINGS - Colorado",
+    "large": 650,
+    "oversize": 800,
+    "moto": 500,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "CLEWISTON - Florida",
+    "large": 450,
+    "oversize": 600,
+    "moto": 450,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "COLUMBUS - Ohio",
+    "large": 550,
+    "oversize": 700,
+    "moto": 400,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "COLUMBIA - South Carolina",
+    "large": 350,
+    "oversize": 500,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "CONCORD - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "CORPUS CHRISTI - Texas",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "CRASHEDTOYS ATLANTA - Georgia",
+    "large": 275,
+    "oversize": 425,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "CRASHEDTOYS DALLAS - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 185,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "CRASHEDTOYS SACRAMENTO - California",
+    "large": 450,
+    "oversize": 600,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "DALLAS - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 185,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "DALLAS SOUTH - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 185,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "DANVILLE - Virginia",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "DAVENPORT - 169 Davenport sublot - Iowa",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DAVENPORT - Iowa",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DAYTON - Ohio",
+    "large": 550,
+    "oversize": 700,
+    "moto": 400,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "DENVER - Colorado",
+    "large": 650,
+    "oversize": 800,
+    "moto": 500,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DENVER CENTRAL - Colorado",
+    "large": 650,
+    "oversize": 800,
+    "moto": 500,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DENVER SOUTH - Colorado",
+    "large": 650,
+    "oversize": 800,
+    "moto": 500,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DES MOINES - Iowa",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DETROIT - Michigan",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "DOTHAN - Alabama",
+    "large": 375,
+    "oversize": 525,
+    "moto": 325,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "DYER - Indiana",
+    "large": 180,
+    "oversize": 330,
+    "moto": 180,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "EARLINGTON - Kentucky",
+    "large": 550,
+    "oversize": 700,
+    "moto": 500,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "EDMONTON - Alberta",
+    "large": 1450,
+    "oversize": 1600,
+    "moto": 1325,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "EL PASO - Texas",
+    "large": 425,
+    "oversize": 575,
+    "moto": 375,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "EUGENE - Oregon",
+    "large": 375,
+    "oversize": 525,
     "moto": 300,
     "warehouse": "SEATTLE"
   },
   {
-    "city": "WA - North Seattle",
-    "large": 425,
+    "city": "EXETER - Rhode Island",
+    "large": 350,
+    "oversize": 500,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "FAIRBURN - Georgia",
+    "large": 275,
+    "oversize": 425,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "FAYETTEVILLE - Arkansas",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "FLINT - Michigan",
+    "large": 450,
+    "oversize": 600,
+    "moto": 325,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "FORT WAYNE - Indiana",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "FREDERICKSBURG - Virginia",
+    "large": 250,
+    "oversize": 400,
+    "moto": 200,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "FREETOWN - Massachusetts",
+    "large": 375,
+    "oversize": 525,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "FRESNO - California",
+    "large": 375,
+    "oversize": 525,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "FT. PIERCE - Florida",
+    "large": 200,
+    "oversize": 350,
+    "moto": 180,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "FT. WORTH - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 185,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "GASTONIA - North Carolina",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "GLASSBORO EAST - New Jersey",
+    "large": 200,
+    "oversize": 350,
+    "moto": 165,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "GLASSBORO WEST - New Jersey",
+    "large": 200,
+    "oversize": 350,
+    "moto": 165,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "GRAHAM - Washington",
+    "large": 150,
+    "oversize": 300,
+    "moto": 150,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "GRENADA - Mississippi",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "HAMPTON - Virginia",
+    "large": 150,
+    "oversize": 300,
+    "moto": 150,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "HARRISBURG - Pennsylvania",
+    "large": 275,
+    "oversize": 425,
+    "moto": 225,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "HARTFORD - Connecticut",
+    "large": 225,
+    "oversize": 375,
+    "moto": 175,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "HARTFORD SPRINGFIELD - Connecticut",
+    "large": 250,
+    "oversize": 400,
+    "moto": 200,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "HAYWARD - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "HELENA - Montana",
+    "large": 750,
+    "oversize": 900,
+    "moto": 750,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "HOUSTON - Texas",
+    "large": 180,
+    "oversize": 330,
+    "moto": 100,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "HOUSTON EAST - Texas",
+    "large": 180,
+    "oversize": 330,
+    "moto": 100,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "INDIANAPOLIS - Indiana",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "IONIA - Michigan",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "JACKSON - Mississippi",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "JACKSONVILLE EAST - Florida",
+    "large": 225,
+    "oversize": 375,
+    "moto": 175,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "JACKSONVILLE NORTH - Florida",
+    "large": 225,
+    "oversize": 375,
+    "moto": 175,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "JACKSONVILLE WEST - Florida",
+    "large": 225,
+    "oversize": 375,
+    "moto": 175,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "KANSAS CITY - Kansas",
+    "large": 625,
+    "oversize": 775,
+    "moto": 425,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "KINCHELOE - Michigan",
+    "large": 750,
+    "oversize": 900,
+    "moto": 650,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "KINDAQUICK TOWING LLC - Hawaii",
+    "large": 2750,
+    "oversize": 2900,
+    "moto": 2750,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "KNOXVILLE - Tennessee",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "LANSING - Michigan",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "LAS VEGAS - Nevada",
+    "large": 325,
+    "oversize": 475,
+    "moto": 250,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "LAS VEGAS WEST - Nevada",
+    "large": 375,
+    "oversize": 525,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "LEXINGTON EAST - Kentucky",
+    "large": 550,
+    "oversize": 700,
+    "moto": 500,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "LEXINGTON WEST - Kentucky",
+    "large": 550,
+    "oversize": 700,
+    "moto": 500,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "LINCOLN - Nebraska",
+    "large": 450,
+    "oversize": 600,
+    "moto": 350,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "LITTLE ROCK - Arkansas",
+    "large": 450,
+    "oversize": 600,
+    "moto": 350,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "LONG BEACH - California",
+    "large": 150,
+    "oversize": 300,
+    "moto": 150,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "LONG ISLAND - New York",
+    "large": 250,
+    "oversize": 400,
+    "moto": 190,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "LONGVIEW - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 200,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "LOS ANGELES - California",
+    "large": 160,
+    "oversize": 310,
+    "moto": 160,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "LOUISVILLE - Kentucky",
+    "large": 550,
+    "oversize": 650,
+    "moto": 500,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "LUFKIN - Texas",
+    "large": 275,
+    "oversize": 425,
+    "moto": 200,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "LUMBERTON - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "LYMAN - Maine",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "MACON - Georgia",
+    "large": 250,
+    "oversize": 400,
+    "moto": 200,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "MADISON - Wisconsin",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MADISON SOUTH - Wisconsin",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MARTINEZ - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "MCALLEN - Texas",
+    "large": 350,
+    "oversize": 500,
+    "moto": 285,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "MEBANE - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "MEMPHIS - Tennessee",
+    "large": 500,
+    "oversize": 650,
+    "moto": 450,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "MENTONE - California",
+    "large": 300,
+    "oversize": 450,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "MIAMI CENTRAL - Florida",
+    "large": 125,
+    "oversize": 275,
+    "moto": 125,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "MIAMI NORTH - Florida",
+    "large": 125,
+    "oversize": 275,
+    "moto": 125,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "MIAMI SOUTH - Florida",
+    "large": 150,
+    "oversize": 300,
+    "moto": 150,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "MILWAUKEE - Wisconsin",
+    "large": 225,
+    "oversize": 375,
+    "moto": 225,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MILWAUKEE NORTH - Wisconsin",
+    "large": 225,
+    "oversize": 375,
+    "moto": 225,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MILWAUKEE SOUTH - Wisconsin",
+    "large": 225,
+    "oversize": 375,
+    "moto": 225,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MINNEAPOLIS - Minnesota",
+    "large": 450,
+    "oversize": 600,
+    "moto": 350,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MINNEAPOLIS NORTH - Minnesota",
+    "large": 450,
+    "oversize": 600,
+    "moto": 350,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "MO - COLUMBIA - Missouri",
+    "large": 625,
+    "oversize": 775,
+    "moto": 425,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "MOBILE - Alabama",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "MOBILE SOUTH - Alabama",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "MOCKSVILLE - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "MONTGOMERY - Alabama",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "NAPA - California",
+    "large": 475,
     "oversize": 625,
     "moto": 350,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "N.Boston-ROWLEY Sublot - Massachusetts",
+    "large": 450,
+    "oversize": 600,
+    "moto": 450,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "NASHVILLE - Tennessee",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "NEW ORLEANS - Louisiana",
+    "large": 400,
+    "oversize": 550,
+    "moto": 325,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "NEWBURGH - New York",
+    "large": 225,
+    "oversize": 375,
+    "moto": 175,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "NORTH AUSTIN - Texas",
+    "large": 325,
+    "oversize": 475,
+    "moto": 225,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "NORTH BOSTON - Massachusetts",
+    "large": 375,
+    "oversize": 525,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "NORTH CHARLESTON - South Carolina",
+    "large": 275,
+    "oversize": 425,
+    "moto": 200,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "NORTH SEATTLE - Washington",
+    "large": 225,
+    "oversize": 375,
+    "moto": 225,
     "warehouse": "SEATTLE"
   },
   {
-    "city": "WA - Pasco",
-    "large": 600,
-    "oversize": 800,
+    "city": "OCALA - Florida",
+    "large": 300,
+    "oversize": 450,
+    "moto": 275,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "OGDEN - Utah",
+    "large": 550,
+    "oversize": 700,
     "moto": 500,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "OKLAHOMA CITY - Oklahoma",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "ORLANDO - Florida",
+    "large": 250,
+    "oversize": 400,
+    "moto": 225,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "ORLANDO NORTH - Florida",
+    "large": 250,
+    "oversize": 400,
+    "moto": 225,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "ORLANDO SOUTH - Florida",
+    "large": 250,
+    "oversize": 400,
+    "moto": 225,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "PASCO - Washington",
+    "large": 350,
+    "oversize": 500,
+    "moto": 275,
     "warehouse": "SEATTLE"
   },
   {
-    "city": "WA - Seattle",
-    "large": 425,
+    "city": "PEORIA - Illinois",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "PHILADELPHIA - Pennsylvania",
+    "large": 200,
+    "oversize": 350,
+    "moto": 125,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PHILADELPHIA EAST - Pennsylvania",
+    "large": 200,
+    "oversize": 350,
+    "moto": 125,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PHOENIX - Arizona",
+    "large": 350,
+    "oversize": 500,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "PITTSBURGH EAST - Pennsylvania",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PITTSBURGH NORTH - Pennsylvania",
+    "large": 450,
+    "oversize": 600,
+    "moto": 325,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PITTSBURGH SOUTH - Pennsylvania",
+    "large": 450,
+    "oversize": 600,
+    "moto": 325,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PITTSBURGH WEST - Pennsylvania",
+    "large": 450,
+    "oversize": 600,
+    "moto": 325,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "PORTLAND NORTH - Oregon",
+    "large": 250,
+    "oversize": 400,
+    "moto": 250,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "PORTLAND SOUTH - Oregon",
+    "large": 300,
+    "oversize": 450,
+    "moto": 275,
+    "warehouse": "SEATTLE"
+  },
+  {
+    "city": "PUNTA GORDA - Florida",
+    "large": 250,
+    "oversize": 400,
+    "moto": 250,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "PUNTA GORDA SOUTH - Florida",
+    "large": 275,
+    "oversize": 425,
+    "moto": 250,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "Phoenix North - Arizona",
+    "large": 475,
+    "oversize": 625,
+    "moto": 350,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "RALEIGH - North Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "RANCHO CUCAMONGA - California",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "REDDING - California",
+    "large": 800,
+    "oversize": 950,
+    "moto": 650,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "RENO - Nevada",
+    "large": 550,
+    "oversize": 700,
+    "moto": 500,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "RICHMOND - Virginia",
+    "large": 175,
+    "oversize": 325,
+    "moto": 175,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "RICHMOND EAST - Virginia",
+    "large": 175,
+    "oversize": 325,
+    "moto": 175,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "ROCHESTER - New York",
+    "large": 450,
+    "oversize": 600,
+    "moto": 350,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "RUTLAND - Vermont",
+    "large": 500,
+    "oversize": 650,
+    "moto": 400,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "SACRAMENTO - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SALT LAKE CITY - Utah",
+    "large": 650,
+    "oversize": 800,
+    "moto": 550,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SALT LAKE CITY NORTH - Utah",
+    "large": 550,
+    "oversize": 700,
+    "moto": 500,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SAN ANTONIO - Texas",
+    "large": 300,
+    "oversize": 450,
+    "moto": 200,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "SAN BERNARDINO - California",
+    "large": 200,
+    "oversize": 350,
+    "moto": 200,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SAN DIEGO - California",
+    "large": 300,
+    "oversize": 450,
+    "moto": 200,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SAN JOSE - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SAVANNAH - Georgia",
+    "large": 125,
+    "oversize": 275,
+    "moto": 125,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "SAVANNAH / VERTIA SUBLOT-Georgia Copart - Georgia",
+    "large": 175,
+    "oversize": 325,
+    "moto": 150,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "SCRANTON - Pennsylvania",
+    "large": 250,
+    "oversize": 400,
+    "moto": 175,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "SEAFORD - Delaware",
+    "large": 325,
+    "oversize": 475,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "SHREVEPORT - Louisiana",
+    "large": 315,
+    "oversize": 465,
+    "moto": 255,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "SIKESTON - Missouri",
+    "large": 475,
     "oversize": 625,
     "moto": 400,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "SO SACRAMENTO - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SOMERVILLE - New Jersey",
+    "large": 150,
+    "oversize": 300,
+    "moto": 100,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "SOUTH BOSTON - Massachusetts",
+    "large": 375,
+    "oversize": 525,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "Southern Illinois - Illinois",
+    "large": 575,
+    "oversize": 725,
+    "moto": 425,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "SPARTANBURG - South Carolina",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "SPOKANE - Washington",
+    "large": 350,
+    "oversize": 500,
+    "moto": 275,
     "warehouse": "SEATTLE"
   },
   {
-    "city": "WA - Spokane",
-    "large": 600,
-    "oversize": 800,
+    "city": "SPRINGFIELD - Missouri",
+    "large": 625,
+    "oversize": 775,
+    "moto": 425,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "ST. CLOUD - Minnesota",
+    "large": 500,
+    "oversize": 650,
+    "moto": 400,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "ST. LOUIS - Missouri",
+    "large": 575,
+    "oversize": 725,
+    "moto": 425,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "SUN VALLEY - California",
+    "large": 200,
+    "oversize": 350,
+    "moto": 200,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "SYRACUSE - New York",
+    "large": 325,
+    "oversize": 475,
+    "moto": 275,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "TALLAHASSEE - Florida",
+    "large": 325,
+    "oversize": 475,
+    "moto": 250,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "TAMPA SOUTH - Florida",
+    "large": 275,
+    "oversize": 425,
+    "moto": 250,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "TAMPA SOUTH - Mulberry Sublot - Florida",
+    "large": 275,
+    "oversize": 425,
+    "moto": 250,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "TANNER - Alabama",
+    "large": 425,
+    "oversize": 575,
+    "moto": 350,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "TIFTON - Georgia",
+    "large": 275,
+    "oversize": 425,
+    "moto": 225,
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "TRENTON - New Jersey",
+    "large": 150,
+    "oversize": 300,
+    "moto": 100,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "TUCSON - Arizona",
+    "large": 400,
+    "oversize": 550,
+    "moto": 350,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "TULSA - Oklahoma",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "VALLEJO - California",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "VAN NUYS - California",
+    "large": 200,
+    "oversize": 350,
+    "moto": 200,
+    "warehouse": "LOS ANGELES"
+  },
+  {
+    "city": "WACO - Texas",
+    "large": 325,
+    "oversize": 475,
+    "moto": 250,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "WALTON - Kentucky",
+    "large": 550,
+    "oversize": 700,
     "moto": 500,
-    "warehouse": "SEATTLE"
+    "warehouse": "SAVANNAH"
+  },
+  {
+    "city": "WASHINGTON DC - Maryland",
+    "large": 300,
+    "oversize": 450,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "WEBSTER - New Hampshire",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "WEST PALM BEACH - Florida",
+    "large": 170,
+    "oversize": 320,
+    "moto": 170,
+    "warehouse": "MIAMI"
+  },
+  {
+    "city": "WEST WARREN - Massachusetts",
+    "large": 375,
+    "oversize": 525,
+    "moto": 250,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "WHEELING - Illinois",
+    "large": 180,
+    "oversize": 330,
+    "moto": 180,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "WAYLAND - Michigan",
+    "large": 400,
+    "oversize": 550,
+    "moto": 300,
+    "warehouse": "CHICAGO"
+  },
+  {
+    "city": "WICHITA - Kansas",
+    "large": 550,
+    "oversize": 700,
+    "moto": 450,
+    "warehouse": "HOUSTON"
+  },
+  {
+    "city": "Windham - Maine",
+    "large": 475,
+    "oversize": 625,
+    "moto": 375,
+    "warehouse": "NEW YORK"
+  },
+  {
+    "city": "YORK HAVEN - Pennsylvania",
+    "large": 275,
+    "oversize": 425,
+    "moto": 225,
+    "warehouse": "NEW YORK"
   }
 ]
