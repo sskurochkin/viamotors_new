@@ -1109,6 +1109,7 @@ const uiInits = {
 			let usdRate = 3.4;
 			let eurRate = 3.5;
 			let usdToEur = 1.05;
+			let data = []
 
 			async function loadCalculationData() {
 				try {
@@ -1189,11 +1190,15 @@ const uiInits = {
 
 				const selectedAuction = document.getElementById('auctionType').value.toLowerCase();
 				let calculationData = calculationCopartData;
+
 				places = [...new Set(calculationCopartData.map((item) => item.city))];
 				if ( selectedAuction == 'iaai' ) {
 					places = [...new Set(calculationIAAIData.map((item) => item.city))];
 					calculationData = calculationIAAIData;
+
 				}
+
+				data = calculationData
 
 				const placesWithDelivery = places.filter((place) => {
 					const placeData = calculationData.filter((item) => item.city === place);
@@ -1205,6 +1210,7 @@ const uiInits = {
 				placesWithDelivery.forEach((state) => {
 					stateSelect.innerHTML += `<option value="${state}">${state}</option>`;
 				});
+
 			}
 
 			function calculateAuctionFee(carCost) {
@@ -1327,8 +1333,13 @@ const uiInits = {
 					{ warehouse: "CHICAGO", priceSedan: 1700, priceBigSuv: 2200, priceMoto: 750 },
 					{ warehouse: "SEATTLE", priceSedan: 2100, priceBigSuv: 2900, priceMoto: 950 },
 				];
+
+
 				const oceanDeliveryLT = [
-					{ warehouse: "NEW JERSEY", priceSedan: 1225, priceBigSuv: 1575, priceMoto: 595 },
+					{ warehouse: "NEW YORK", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
+					{ warehouse: "NORFOLK", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
+					{ warehouse: "SAVANNAH", priceSedan: 700, priceBigSuv: 1000, priceMoto: 375 },
+					{ warehouse: "MIAMI", priceSedan: 775, priceBigSuv: 1075, priceMoto: 400 },
 					{ warehouse: "GEORGIA", priceSedan: 1195, priceBigSuv: 1625, priceMoto: 595 },
 					{ warehouse: "TEXAS", priceSedan: 1335, priceBigSuv: 1625, priceMoto: 595 },
 					{ warehouse: "CALIFORNIA", priceSedan: 1750, priceBigSuv: 2225, priceMoto: 650 },
@@ -1424,7 +1435,7 @@ const uiInits = {
 				let usaDeliveryRow;
 				let deliveryToPort;
 
-				usaDeliveryRow = calculationCopartData.find((item) => item.city === lotLocation);
+				usaDeliveryRow = data.find((item) => item.city === lotLocation);
 				if ( carType === 'sedan' ) {
 					deliveryToPort = usaDeliveryRow?.['large'] || 0;
 				}
@@ -1435,18 +1446,6 @@ const uiInits = {
 					deliveryToPort = usaDeliveryRow?.['moto'] || 0;
 				}
 
-				if ( auctionType === 'iaai' ) {
-					usaDeliveryRow = calculationCopartData.find((item) => item.city === lotLocation);
-					if ( carType === 'sedan' ) {
-						deliveryToPort = usaDeliveryRow?.['large'] || 0;
-					}
-					if ( carType === 'pickUp' || carType === 'big' ) {
-						deliveryToPort = usaDeliveryRow?.['oversize'] || 0;
-					}
-					if ( carType === 'moto' ) {
-						deliveryToPort = usaDeliveryRow?.['moto'] || 0;
-					}
-				}
 
 				let usaPortName = usaDeliveryRow?.warehouse || "";
 				if (!Number.isFinite(deliveryToPort)) {
