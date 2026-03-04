@@ -56,6 +56,9 @@
 ul.section-service--list--content {
 	position: relative;
 	margin-bottom: 50px;
+	@media (max-width: $xs - 1) {
+		margin-bottom: 24px;
+	}
 }
 
 .section-service--list--content li {

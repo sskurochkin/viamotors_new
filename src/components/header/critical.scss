@@ -250,16 +250,13 @@ body.overflow .header {
 
 
 .header{
-	position: relative;
-	z-index: 100;
-	//background-color: transparent;
 
 	&-inner{
 		display: flex;
 		align-items: center;
 		height: var(--headerHeight);
 		gap: 32px;
-		padding: 16px 24px;
+		padding: 16px 0 0;
 		//backdrop-filter: blur(7px);
 		//-webkit-backdrop-filter: (7px);
 		//border-radius: var(--radius);
@@ -267,24 +264,31 @@ body.overflow .header {
 
 	}
 	&-logo{
-		height: 40px;
-		width: 200px;
-		position: relative;
-		@media (max-width: $md - 1) {
-			position: relative;
-			//z-index: 101;
-		}
-		@media (max-width: $xs - 1) {
-			max-width: 150px;
-			display: flex;
-			align-items: center;
-		}
-		img{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
-		}
+		////height: 40px;
+		//width: 200px;
+		//position: relative;
+		//@media (max-width: $lg - 1) {
+		//	@media (min-width: $xs) {
+		//		width: 150px;
+		//	}
+		//
+		//}
+		//
+		//@media (max-width: $xs - 1) {
+		//	max-width: 150px;
+		//	display: flex;
+		//	align-items: center;
+		//}
+		//img{
+		//
+		//	//position: absolute;
+		//	width: 100%;
+		//	//height: 100%;
+		//	object-fit: contain;
+		//	@media (min-width: $xs) {
+		//		display: block;
+		//	}
+		//}
 	}
 
 	&-menu{
@@ -294,6 +298,10 @@ body.overflow .header {
 		margin-left: 70px;
 		flex-grow: 1;
 		justify-content: space-between;
+		@media (max-width: $lg - 1) {
+			margin-left: 20px;
+			gap: 24px;
+		}
 		@media (max-width: $md - 1) {
 			flex-direction: column;
 			background-color: var(--main);
@@ -307,7 +315,8 @@ body.overflow .header {
 		&__wrap{
 			display: contents;
 			@media (max-width: $md - 1) {
-				display: block;
+				display: flex;
+				flex-direction: column;
 				position: fixed;
 				top: 0;
 				z-index: 100;
@@ -329,6 +338,9 @@ body.overflow .header {
 			display: flex;
 			align-items: center;
 			gap: 40px;
+			@media (max-width: $lg - 1) {
+				gap: 16px;
+			}
 			@media (max-width: $md - 1) {
 				flex-direction: column;
 			}
@@ -487,5 +499,65 @@ body.overflow .header {
 				display: none;
 			}
 		}
+	}
+}
+
+.header-usa{
+	position: relative;
+	z-index: 100;
+	@media (max-width: $md - 1) {
+		.burger-icon{
+			display: block;
+			margin-left: auto;
+			span{
+				background-color: #000000;
+			}
+		}
+	}
+
+	.header-logo{
+		max-width: 140px;
+		@media (max-width: $sm - 1) {
+			img:first-child{
+				display: block;
+			}
+		}
+	}
+	.header-inner{
+		@media (max-width: $sm - 1) {
+			padding-bottom: 16px;
+		}
+	}
+	.header-menu__wrap{
+		@media (max-width: $md - 1) {
+			background-color: #000000;
+			align-items: center;
+			.phones-list__link{
+				color: #ffffff;
+			}
+		}
+
+
+	}
+	.header-menu{
+		@media (max-width: $md - 1) {
+			position: static;
+			height: auto;
+			flex-grow: 0;
+
+		}
+	}
+	.close{
+		@media (min-width: $md){
+			display: none;
+		}
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		svg{
+			width: 24px;
+			height: 24px;
+		}
+
 	}
 }

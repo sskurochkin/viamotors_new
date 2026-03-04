@@ -24,11 +24,17 @@
   </head>
   <body class="theme-default usa-page">
     <div class="wrapper">
-      <header class="header">
+      <header class="header header-usa">
         <div class="container">
           <div class="header-inner">
-            <div class="header-logo"><img src="./assets/images/logo.jpg"></div>
-            <div class="header-menu__wrap">
+            <div class="header-logo"><a class="header-logo__link" href="/"><img src="./assets/images/logo.jpg"><img src="./assets/images/logo-bottom.jpg"></a></div>
+            <div class="burger-icon"><span></span><span></span><span></span><span></span></div>
+            <div class="header-menu__wrap js-header">
+              <div class="close"><svg width="16" height="16" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.1717 13.7431C13.0966 13.7432 13.0223 13.7284 12.9529 13.6996C12.8836 13.6708 12.8206 13.6286 12.7676 13.5754L2.42246 3.2316C2.31516 3.12431 2.25488 2.97878 2.25488 2.82703C2.25488 2.67529 2.31516 2.52976 2.42246 2.42246C2.52976 2.31516 2.67529 2.25488 2.82703 2.25488C2.97878 2.25488 3.12431 2.31516 3.2316 2.42246L13.5767 12.7676C13.6565 12.8476 13.7107 12.9494 13.7326 13.0602C13.7546 13.171 13.7432 13.2858 13.7 13.3901C13.6568 13.4945 13.5836 13.5837 13.4898 13.6465C13.3959 13.7093 13.2856 13.7429 13.1726 13.7431H13.1717Z" fill="#FFFFFF"/>
+<path d="M2.82766 13.7431C2.71465 13.7431 2.60417 13.7096 2.51019 13.6469C2.4162 13.5841 2.34291 13.4949 2.29957 13.3906C2.25624 13.2862 2.2448 13.1713 2.2667 13.0604C2.2886 12.9496 2.34287 12.8477 2.42264 12.7676L12.7678 2.42246C12.8751 2.31516 13.0206 2.25488 13.1723 2.25488C13.3241 2.25488 13.4696 2.31516 13.5769 2.42246C13.6842 2.52976 13.7445 2.67529 13.7445 2.82703C13.7445 2.97878 13.6842 3.12431 13.5769 3.2316L3.23178 13.5767C3.17868 13.6297 3.11565 13.6717 3.0463 13.7002C2.97696 13.7288 2.90266 13.7434 2.82766 13.7431Z" fill="#FFFFFF"/>
+</svg>
+              </div>
               <div class="header-menu">
                 <div class="header-menu__links"><a class="header-menu__item" href="#services"><span>Порядок работы</span></a><a class="header-menu__item" href="#team"><span>Услуги</span></a><a class="header-menu__item" href="#price"><span>Расчет стоимости</span></a><a class="header-menu__item" href="#contacts"><span>контакты</span></a><a class="header-menu__item" href="/"><span>СТО</span></a></div>
                 <div class="header-menu__control"></div>
@@ -39,7 +45,6 @@
                   <div class="phones-list__item"><a class="phones-list__link" href="tel:+375447718000"><span>+375 (44) 77-18-000</span><span class="phones-list__icon icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_1559_70175)"><path d="M13.5371 20L12.502 16.6016H7.29688L6.26172 20H3L8.03906 5.66406H11.7402L16.7988 20H13.5371ZM11.7793 14.0625C10.8223 10.9831 10.2819 9.24154 10.1582 8.83789C10.041 8.43424 9.95638 8.11523 9.9043 7.88086C9.68945 8.71419 9.07422 10.7747 8.05859 14.0625H11.7793Z" fill="#E41522"/><path d="M19.7832 12H17.6709V6.2168L17.6914 5.2666L17.7256 4.22754C17.3747 4.57845 17.1309 4.80859 16.9941 4.91797L15.8457 5.84082L14.8271 4.56934L18.0469 2.00586H19.7832V12Z" fill="#E41522"/></g><defs><clipPath id="clip0_1559_70175"><rect width="24" height="24" fill="white"/></clipPath></defs></svg></span></a></div>
                 </div>
               </div>
-              <div class="header-mob burger-icon"><span></span><span></span><span></span><span></span></div>
             </div>
           </div>
         </div>
@@ -63,12 +68,12 @@
 <li data-tab="proc-s-1" class="active">
 <div class="days-buy__dd">День 1-5</div>
 <div class="days-buy__name">Консультация</div>
-<div class="days-buy__txt">Осуществляем подбор авто опираясь на Ваши желания и бюджет</div>
+<div class="days-buy__txt">Определяемся с Вашими пожеланиями (модель, цвет, комплектация, бюджет и т.д.</div>
 </li>
 <li data-tab="proc-s-2">
 <div class="days-buy__dd">День 6-7</div>
 <div class="days-buy__name">Заключение договора</div>
-<div class="days-buy__txt">Тщательная проверка в более чем 8 этапов</div>
+<div class="days-buy__txt">Оговариваем условия договора и производим предоплату</div>
 </li>
 <li data-tab="proc-s-3" class="">
 <div class="days-buy__dd">День 8-9</div>
@@ -107,7 +112,7 @@
 </div>
 <div class="car-proc__right">
 <div class="title-elem">Консультация</div>
-<p> Консультация</p>
+<p> Поможем определиться с моделью, комплектацией и цветом. Учтем ваш бюджет и пожелания. Подберем оптимальные варианты.</p>
 </div>
 </div>
 <div class="car-proc proc-s-2 ">
@@ -116,7 +121,7 @@
 </div>
 <div class="car-proc__right">
 <div class="title-elem">Зключение договора</div>
-<p>Заключение договора</p>
+<p>Обсуждаем индивидуальные условия, согласовываем детали и вносим предоплату для бронирования автомобиля.</p>
 </div>
 </div>
 <div class="car-proc proc-s-3">
@@ -152,7 +157,7 @@
 </div>
 <div class="car-proc__right">
 <div class="title-elem">Растаможка</div>
-<p> AutoCargo поможет вам подготовить все необходимые документы для быстрого таможенного оформления автомобиля в Российской Федерации. При отсутствии каких-либо документов, они будут немедленно восстановлены. Если документы предоставлены клиентом своевременно и без нарушений, таможенное оформление займет всего 2-3 дня.                        </p>
+<p> Мы поможем вам подготовить все необходимые документы для быстрого таможенного оформления автомобиля в Республике Беларусь. При отсутствии каких-либо документов, они будут немедленно восстановлены. Если документы предоставлены клиентом своевременно и без нарушений, таможенное оформление займет всего 2-3 дня.                        </p>
 </div>
 </div>
 <div class="car-proc proc-s-7">
@@ -170,7 +175,7 @@
 </div>
 <div class="car-proc__right">
 <div class="title-elem">Регистрация</div>
-<p> После всех процедур, связанных с покупкой, доставкой и ремонтом автомобиля, его необходимо зарегистрировать в ГИБДД России. Специалисты AutoCargo помогут вам на всех этапах этого процесса, начиная с заполнения заявления на регистрацию и заканчивая подготовкой полного пакета необходимых документов.                        </p>
+<p> После всех процедур, связанных с покупкой, доставкой и ремонтом автомобиля, его необходимо зарегистрировать в ГАИ. Наши специалисты помогут вам на всех этапах этого процесса, начиная с заполнения заявления на регистрацию и заканчивая подготовкой полного пакета необходимых документов.                        </p>
 </div>
 </div>
 <div class="buttons-vd ch-right-d">
@@ -195,7 +200,8 @@
           <div class="container">
             <div class="u-call__inner">
               <div class="u-title">Заказать консультацию</div>
-              <p>Получите консультацию по цене, с учетом затрат или по любому другому вопросу.</p>
+              <p>Получите консультацию по цене, с учетом затрат или по любому другому вопросу.</p><br>
+              <div class="btn btn--primary" data-toggle="modal" data-target="#modal-message"><span>Заказать консультацию</span></div>
             </div>
           </div>
         </section>
@@ -204,53 +210,45 @@
             <div class="u-title">Услуги</div>
             <div class="u-serv-wrapper"><div class="section-service--lists">
 <div class="section-service--list">
-<div class="section-service--list--name">Standart</div>
+<div class="section-service--list--name">"Эконом"</div>
 <ul class="section-service--list--content">
-<li>Вы самостоятельно присылаете нам лот</li>
+<li>Самостоятельно присылаете нам лот и стоимость ставки</li>
 <li>Проведение аукциона</li>
 <li>Помощь с организацией доставки</li>
-<li>Информация о стадии и статусе заказа</li>
 <li>Фотоотчеты на всех этапах доставки</li>
-<li>1 CarFax отчёт бесплатно</li>
+<li>Консультация по таможенному оформлению и дальнейшей постановке авто на учёт</li>
 </ul>
 <div class="section-service--list--price">450 BYN</div>
-<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Standart">Оставить заявку</div>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Эконом">Оставить заявку</div>
 </div>
 <div class="section-service--list middle">
-<div class="section-service--list--name">Lux</div>
+<div class="section-service--list--name">Стандарт</div>
 <ul class="section-service--list--content">
 <li>Консультация и помощь с подбором авто на аукционе</li>
-<li>Оценка степени повреждений</li>
+<li>Ориентировочный расчет степени повреждений</li>
 <li>Проверка истории автомобиля</li>
 <li>Проведение аукциона</li>
 <li>Помощь с организацией доставки</li>
-<li>Информация о стадии и статусе заказа</li>
 <li>Фотоотчет на всех этапах доставки</li>
-<li>5 CarFax отчётов бесплатно</li>
 <li>Консультация по таможенному оформлению и дальнейшей постановке авто на учёт</li>
-<li>Ориентировочный расчет степени повреждений</li>
-<li>Приятный и полезный подарок</li>
 </ul>
-<div class="section-service--list--price"><s style="padding-right:10px;">750 BYN</s><span style="color: var(--second-color);">375 BYN</span></div>
-<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг VIP">Оставить заявку</div>
+<div class="section-service--list--price"><span>650 BYN</span></div>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Стандарт">Оставить заявку</div>
 </div>
 <div class="section-service--list">
-<div class="section-service--list--name">Premium</div>
+<div class="section-service--list--name">Под ключ</div>
 <ul class="section-service--list--content">
 <li>Консультация и помощь с подбором авто на аукционе</li>
-<li>Оценка степени повреждений</li>
+<li>Ориентировочный расчет степени повреждений</li>
 <li>Проверка истории автомобиля</li>
 <li>Проведение аукциона</li>
 <li>Помощь с организацией доставки</li>
-<li>Информация о стадии и статусе заказа</li>
 <li>Фотоотчет на всех этапах доставки</li>
-<li>15 CarFax отчётов бесплатно</li>
-<li>Организация комплекса услуг по растаможке автомобиля</li>
-<li>Ориентировочный расчёт степени повреждений, а также предложения по ремонту на собственных и партнёрских СТО</li>
-<li>Приятный и полезный подарок</li>
+<li>Консультация по таможенному оформлению и дальнейшей постановке авто на учёт</li>
+<li>Помощь в восстановлении авто на нашем и партнерском СТО</li>
 </ul>
-<div class="section-service--list--price">1250 BYN</div>
-<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Premium">Оставить заявку</div>
+<div class="section-service--list--price">890 BYN</div>
+<div class="btn btn--outline" data-toggle="modal" data-target="#modal-message" data-heading="Клиент выбрал услуг Под ключ">Оставить заявку</div>
 </div>
 </div>
             </div>
@@ -461,9 +459,9 @@
                     <input class="form-control" type="tel" id="phoneModal" name="phoneModal" placeholder="+375 (__) ___ __ __" required="required" pattern="\+[0-9]{3} \([0-9]{2}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" data-bv-live="enabled" data-bv-notempty-message="Заполните поле" data-bv-regexp-message="Неверный формат" data-bv-stringLength-message=" " data-bv-emailaddress-message=" " data-mask="+375 (__) ___ __ __"/>
                   </div>
                   <div class="form-group form-group--fw">
-                    <label class="form-control-label" for="ID2169405768">Ваше сообщение
+                    <label class="form-control-label" for="ID6391992032">Ваше сообщение
                     </label>
-                    <textarea class="form-control" rows="3" id="ID2169405768" name="message" placeholder="Ваш комментарий"></textarea>
+                    <textarea class="form-control" rows="3" id="ID6391992032" name="message" placeholder="Ваш комментарий"></textarea>
                   </div>
                   <button class="btn btn--primary" type="submit"><span>Отправить</span></button>
                 </form>

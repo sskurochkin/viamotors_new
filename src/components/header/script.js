@@ -1102,103 +1102,103 @@ window.addEventListener('load', function () {
 
 window.addEventListener('alpine:init', function () {
 
-	Alpine.data('price', () => ({
-
-		modal: false,
-		policy: false,
-		amount: null,
-		form : null,
-		success: false ,
-		errorMessage: '',
-		errorCode: '',
-
-
-		init() {
-			this.form = this.$refs.form
-			this.success = false
-			this.form.addEventListener('success.validator', async()=>{
-				await this.sendRequest()
-			})
-
-		},
-
-		async sendRequest(){
-			const data = new FormData(this.form)
-
-
-			try {
-				const response = await fetch('/payment.php', {
-					method: 'POST',
-					body: data
-				})
-
-				const {formUrl, ...rest} = await response.json()
-
-				if(formUrl){
-					this.success = true
-
-					setTimeout(()=>{
-						this.closePopup()
-						this.$nextTick(()=>{
-							window.location.href = formUrl
-						})
-
-					}, 1500)
-
-					// this.paymentWindow(formUrl, 'Оплата' ,460, 700)
-
-				}
-
-				if(rest.errorMessage){
-					this.errorMessage = rest.errorMessage
-					this.errorCode = rest.errorCode
-				}
-
-
-
-			} catch(e){
-				console.log(e)
-			} finally {
-
-			}
-
-		},
-
-		sendToTg(data){
-
-		},
-
-		paymentWindow(target_url, win_name, width, height){
-
-				let socWinOpen = window.open(target_url, win_name, 'scrollbars=yes,statusbar=no,toolbar=no,location=no,directories=no,resizable=no,menubar=no,width='+width+',height='+height+',screenX='+((screen.width-width) / 2)+",screenY="+((screen.height-height) / 2)+",top="+((screen.height-height) / 2)+",left="+((screen.width-width) / 2));
-				socWinOpen.focus();
-
-		},
-
-
-		openPopup(id){
-			this.modal = true
-			this.amount = +id*100
-			document.querySelector('body').classList.add('overflow')
-		},
-
-		closePopup(){
-			this.modal = false
-			this.amount = false
-
-			document.querySelector('body').classList.remove('overflow')
-			setTimeout(()=>{
-				this.errorMessage = ''
-				this.errorCode = ''
-				this.success = false
-				this.form.reset()
-			}, 600)
-		},
-
-
-
-
-	}))
+	// Alpine.data('price', () => ({
+	//
+	// 	modal: false,
+	// 	policy: false,
+	// 	amount: null,
+	// 	form : null,
+	// 	success: false ,
+	// 	errorMessage: '',
+	// 	errorCode: '',
+	//
+	//
+	// 	init() {
+	// 		this.form = this.$refs.form
+	// 		this.success = false
+	// 		this.form.addEventListener('success.validator', async()=>{
+	// 			await this.sendRequest()
+	// 		})
+	//
+	// 	},
+	//
+	// 	async sendRequest(){
+	// 		const data = new FormData(this.form)
+	//
+	//
+	// 		try {
+	// 			const response = await fetch('/payment.php', {
+	// 				method: 'POST',
+	// 				body: data
+	// 			})
+	//
+	// 			const {formUrl, ...rest} = await response.json()
+	//
+	// 			if(formUrl){
+	// 				this.success = true
+	//
+	// 				setTimeout(()=>{
+	// 					this.closePopup()
+	// 					this.$nextTick(()=>{
+	// 						window.location.href = formUrl
+	// 					})
+	//
+	// 				}, 1500)
+	//
+	// 				// this.paymentWindow(formUrl, 'Оплата' ,460, 700)
+	//
+	// 			}
+	//
+	// 			if(rest.errorMessage){
+	// 				this.errorMessage = rest.errorMessage
+	// 				this.errorCode = rest.errorCode
+	// 			}
+	//
+	//
+	//
+	// 		} catch(e){
+	// 			console.log(e)
+	// 		} finally {
+	//
+	// 		}
+	//
+	// 	},
+	//
+	// 	sendToTg(data){
+	//
+	// 	},
+	//
+	// 	paymentWindow(target_url, win_name, width, height){
+	//
+	// 			let socWinOpen = window.open(target_url, win_name, 'scrollbars=yes,statusbar=no,toolbar=no,location=no,directories=no,resizable=no,menubar=no,width='+width+',height='+height+',screenX='+((screen.width-width) / 2)+",screenY="+((screen.height-height) / 2)+",top="+((screen.height-height) / 2)+",left="+((screen.width-width) / 2));
+	// 			socWinOpen.focus();
+	//
+	// 	},
+	//
+	//
+	// 	openPopup(id){
+	// 		this.modal = true
+	// 		this.amount = +id*100
+	// 		document.querySelector('body').classList.add('overflow')
+	// 	},
+	//
+	// 	closePopup(){
+	// 		this.modal = false
+	// 		this.amount = false
+	//
+	// 		document.querySelector('body').classList.remove('overflow')
+	// 		setTimeout(()=>{
+	// 			this.errorMessage = ''
+	// 			this.errorCode = ''
+	// 			this.success = false
+	// 			this.form.reset()
+	// 		}, 600)
+	// 	},
+	//
+	//
+	//
+	//
+	// }))
 
 })
 

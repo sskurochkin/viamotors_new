@@ -24,6 +24,15 @@
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
+		@media (max-width: $xs - 1) {
+			&:before{
+				content: '';
+				position: absolute;
+				inset: 0;
+				background-color: rgba(0,0,0,0.4);
+				z-index: 1;
+			}
+		}
 
 		img {
 			top: 0;
@@ -43,11 +52,23 @@
 		flex-direction: column;
 		justify-content: center;
 		max-width: 540px;
+		@media (max-width: $xs - 1) {
+			align-items: center;
+			text-align: center;
+			position: relative;
+			z-index: 2;
+		}
 
 		h1 {
 			font-size: 72px;
 			font-weight: 800;
 			line-height: 1;
+			@media (max-width: $sm - 1) {
+				font-size: 54px;
+			}
+			@media (max-width: $xs - 1) {
+				font-size: 46px;
+			}
 		}
 
 		p {
@@ -335,6 +356,35 @@
 	}
 }
 
+@media (max-width: 600px) {
+	.content-cards-f .cards-bl .cards-car__card,
+	.content-cards-f .cards-bl .sm-block-form,
+	.content-cards-f .cards-bl .action-catalog-bl {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.action-catalog-bl {
+		min-height: 400px;
+	}
+	.team-b .element {
+		margin-right: 0;
+	}
+	.days-buy li {
+		max-width: 50%;
+	}
+	.desc-bl {
+		flex-direction: column;
+	}
+	.point-telegram__wrapper {
+		bottom: 85px;
+	}
+	.car-proc{
+		grid-template-columns:	1fr;
+	}
+}
+
+
+
 .u-calc__wrapper {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -348,6 +398,9 @@
 	.h4 {
 		font-size: 24px;
 		font-weight: 800;
+		@media (max-width: $sm - 1) {
+			font-size: 18px;
+		}
 	}
 }
 
@@ -363,6 +416,10 @@
 	grid-column: 1 / 3;
 	margin-top: 36px;
 	border: 2px solid var(--border);
+	@media (max-width: $sm - 1) {
+		grid-template-columns: 1fr;
+		padding: 20px;
+	}
 }
 
 .u-calc--form-field {
@@ -478,6 +535,10 @@
 	padding: 30px;
 	border: 2px solid var(--border);
 	border-radius: 8px;
+	@media (max-width: $sm - 1) {
+		grid-column: 1 / 3;
+		padding: 16px;
+	}
 }
 
 .u-calc--delivery {

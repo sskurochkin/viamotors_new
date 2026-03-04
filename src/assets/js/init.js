@@ -265,9 +265,11 @@ const uiInits = {
 				x.addEventListener('click', (e) => {
 
 					modal.classList.remove('ta-hidden')
-
+					modal.querySelector('textarea').value = ''
 					const text = e.target?.innerText || ''
 					const mess = e.target?.dataset.heading || ''
+
+
 
 					if(mess){
 						modal.classList.add('ta-hidden')
@@ -1014,7 +1016,12 @@ const uiInits = {
 
 		document.querySelector('.burger-icon')?.addEventListener('click', function (){
 			this.classList.toggle('active')
-			this.closest('.header-nav').classList.toggle('active')
+			document.querySelector('.js-header').classList.toggle('active')
+		})
+
+		document.querySelector('.close')?.addEventListener('click', function (){
+			document.querySelector('.burger-icon').classList.toggle('active')
+			document.querySelector('.js-header').classList.toggle('active')
 		})
 
 		// const swiper = new Swiper('.swiper', {
