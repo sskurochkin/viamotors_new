@@ -8,7 +8,7 @@ mixin style-includer()
 
 
 		each item in componentsList
-			link(rel='stylesheet' href= dir + './assets/components/' + item + '/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
+			link(rel='stylesheet' href= dir + '/assets/components/' + item + '/style.css' as='style' onload="this.onload=null;this.rel='stylesheet'")
 
 
 //- Подключение критический стилей отдельных компонентов
@@ -24,7 +24,7 @@ mixin componentsScripts-includer()
 		script(src= dir + '/concat/' + pageName + '_html.js' defer)
 	else if (PROJECT_MODE !== 'dev')
 		each item in componentsScriptsList
-			script(src= dir + './assets/components/' + item + '/script.min.js' defer)
+			script(src= dir + '/assets/components/' + item + '/script.min.js' defer)
 
 
 //- Подключение скриптов отдельных вендоров

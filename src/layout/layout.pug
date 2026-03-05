@@ -20,10 +20,10 @@ html(lang='ru-RU')
 		meta(name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1.0')
 
 		title= pageTitle
-		meta(name='description' content='✂️ Макетирование одежды с нуля! Онлайн-обучение от Татьяны Киреевой — простые объяснения, практика, разбор ошибок. Начните карьеру в дизайне одежды!')
-		<meta name="keywords" content="курс макетирования для начинающих, обучение шитью с нуля, как делать выкройки, основы конструирования одежды, онлайн курсы кройки и шитья, лекала для начинающих, школа Татьяны Киреевой, простые выкройки своими руками">
+		meta(name='description' content='🚗Подбор авто из США в Минске с проверкой истории и доставкой. Профессиональное СТО: ремонт, диагностика и обслуживание автомобилей. Полное сопровождение покупки и подготовка к эксплуатации в РБ. Звоните! 📞')
+		<meta name="keywords" content="подбор авто из США, СТО Минск, ремонт автомобилей, доставка авто из Америки, растаможка авто, обслуживание автомобилей, диагностика авто, автосервис Минск, купить авто из США, проверка авто перед покупкой, аукционы США, авто из Америки под ключ, ремонт иномарок, шиномонтаж, кузовной ремонт, авто из США в Беларусь, подбор авто под заказ, СТО рядом, техобслуживание авто, авто из США цена">
 		meta(name="robots" content="index, follow")
-		<meta property="og:title" content="ViaMotors | Оказане услуг по ремонту автомобилей">
+		<meta property="og:title" content="ViaMotors | Оказане услуг по ремонту автомобилей | Подбор авто из США">
 
 		<meta property="og:url" content="https://viamotors.by">
 
@@ -39,12 +39,12 @@ html(lang='ru-RU')
 		link(rel="apple-touch-icon" href="/favicons/android-chrome-512x512.png" sizes="512x512")
 		<link rel="manifest" href="/site.webmanifest">
 
-		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-regular.woff" as="font" type="font/woff2" crossorigin="anonymous")
-		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-600.woff" as="font" type="font/woff2" crossorigin="anonymous")
-		link(rel="preload" href="./assets/fonts/open-sans-v34-latin_cyrillic-800.woff" as="font" type="font/woff2" crossorigin="anonymous")
+		link(rel="preload" href="/assets/fonts/open-sans-v34-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous")
+		link(rel="preload" href="/assets/fonts/open-sans-v34-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin="anonymous")
+		link(rel="preload" href="/assets/fonts/open-sans-v34-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin="anonymous")
 
 		//-Стили для всех страниц
-		link(href="./critical.css" rel="stylesheet")
+		link(href="/critical.css" rel="stylesheet")
 
 
 		block componentsCriticalStyles
@@ -62,11 +62,11 @@ html(lang='ru-RU')
 			include ../components/footer/footer
 
 
-		//-include ../components/pages-viget/pages-viget
+		include ../components/modal/start/modal-start
 
 		//-Либы, используемые на всех страницах
 
-		script(src="./assets/js/vendor/splide.min.js" defer)
+		script(src="/assets/js/vendor/splide.min.js" defer)
 
 
 		block vendorScripts
@@ -74,7 +74,7 @@ html(lang='ru-RU')
 		block scripts
 
 		//-Скрипты для всех страниц
-		script(src="./assets/js/app.min.js" defer)
+		script(src="/assets/js/app.min.js" defer)
 
 		block componentsScripts
 
@@ -82,5 +82,5 @@ html(lang='ru-RU')
 
 		//-Стили компонентов этой страницы
 		block componentsStyles
-		//-script(src="./assets/js/alpinejs/alpine.min.js" defer)
+		//-script(src="/assets/js/alpinejs/alpine.min.js" defer)
 

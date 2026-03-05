@@ -137,7 +137,7 @@ body.overflow .header {
 		@media(max-width: $md - 1) {
 			font-size: 14px;
 		}
-		@media(max-width: $sm - 1) {
+		@media(max-width: $md - 1) {
 			margin: 0 -10px;
 			height: 50px;
 			.burger-icon {
@@ -166,7 +166,8 @@ body.overflow .header {
 				-moz-column-gap: 24px;
 				column-gap: 24px;
 			}
-			@media(max-width: $sm - 1) {
+			@media(max-width: $md - 1) {
+				padding-bottom: 12px;
 				opacity: 0;
 				visibility: hidden;
 				flex-direction: column;
@@ -200,12 +201,12 @@ body.overflow .header {
 
 				&:before {
 					content: '';
-					width: 130%;
+					width: 200%;
 					height: 100%;
 					background-color: $c-header;
 					position: absolute;
 					display: block;
-					left: -50px;
+					left: -50%;
 					z-index: -1;
 				}
 			}
@@ -536,9 +537,16 @@ body.overflow .header {
 				color: #ffffff;
 			}
 		}
-
-
 	}
+	//.header-menu__links{
+	//	gap: 28px;
+	//	@media (max-width: $lg - 1) {
+	//		gap: 16px;
+	//	}
+	//}
+	//.header-menu__item{
+	//	padding: 4px 8px;
+	//}
 	.header-menu{
 		@media (max-width: $md - 1) {
 			position: static;

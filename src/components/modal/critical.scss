@@ -311,3 +311,17 @@
 		}
 	}
 }
+
+.modal-start{
+	.modal-header{
+		justify-content: center;
+	}
+	.modal-inner{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+	.modal-close{
+		display: none;
+	}
+}

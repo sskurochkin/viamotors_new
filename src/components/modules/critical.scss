@@ -130,7 +130,7 @@
 	transition: .5s ease-in-out;
 	cursor: pointer;
 
-	@media (max-width: $sm - 1) {
+	@media (max-width: $md - 1) {
 		display: block;
 		margin-right: 0;
 	}

@@ -226,6 +226,12 @@ const uiInits = {
 						document.querySelector('body').classList.remove('modal-open');
 						setTimeout(() => {
 							document.dispatchEvent(new Event('XModalHide'))
+							this.element.dispatchEvent(new CustomEvent('modalHide', {
+								detail: {
+									el: this.element
+								}
+							}))
+
 						})
 					}, this.TRANSITION_TIME * 0.8)
 				}
@@ -270,8 +276,7 @@ const uiInits = {
 					const mess = e.target?.dataset.heading || ''
 
 
-
-					if(mess){
+					if (mess) {
 						modal.classList.add('ta-hidden')
 						modal.querySelector('textarea').value = mess
 					}
@@ -531,7 +536,6 @@ const uiInits = {
 								body: formData
 							})
 							const data = await response.json()
-
 
 
 							if (data?.success) {
@@ -1014,15 +1018,42 @@ const uiInits = {
 	},
 	base: function () {
 
-		document.querySelector('.burger-icon')?.addEventListener('click', function (){
+		function setCookieForDay(name, value) {
+			const date = new Date();
+			date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // +24 часа в миллисекундах
+			document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+		}
+
+		const getCookie = (name) =>
+			document.cookie.split('; ')
+				.find(row => row.startsWith(name + '='))
+				?.split('=')[1] || null;
+
+
+		document.querySelector('.burger-icon')?.addEventListener('click', function () {
 			this.classList.toggle('active')
 			document.querySelector('.js-header').classList.toggle('active')
 		})
 
-		document.querySelector('.close')?.addEventListener('click', function (){
+		document.querySelector('.close')?.addEventListener('click', function () {
 			document.querySelector('.burger-icon').classList.toggle('active')
 			document.querySelector('.js-header').classList.toggle('active')
 		})
+
+		const startModal = document.getElementById('modal-start')
+
+		startModal.addEventListener('modalHide', ({detail: {el}}) => {
+			setCookieForDay('modalOpen', '1')
+		})
+
+		setTimeout(() => {
+			const isOpen = getCookie('modalOpen')
+
+			if (!isOpen){
+				startModal.modal()
+			}
+
+		}, 1000)
 
 		// const swiper = new Swiper('.swiper', {
 		// 	// Optional parameters
@@ -1048,7 +1079,7 @@ const uiInits = {
 
 	},
 
-	usa: function (){
+	usa: function () {
 		// Используем const для переменных, которые не переназначаются
 		const blockCountTabProces = document.querySelectorAll(".days-buy li").length;
 
@@ -1102,7 +1133,7 @@ const uiInits = {
 		});
 	},
 
-	calc: function (){
+	calc: function () {
 
 		document.addEventListener('DOMContentLoaded', function () {
 
@@ -1199,7 +1230,7 @@ const uiInits = {
 				let calculationData = calculationCopartData;
 
 				places = [...new Set(calculationCopartData.map((item) => item.city))];
-				if ( selectedAuction == 'iaai' ) {
+				if (selectedAuction == 'iaai') {
 					places = [...new Set(calculationIAAIData.map((item) => item.city))];
 					calculationData = calculationIAAIData;
 
@@ -1394,33 +1425,33 @@ const uiInits = {
 				console.log("Type: " + type);
 
 				let usaDeliveryRow = calculationCopartData.find((item) => item.city === lotLocation);
-				if ( auctionType === 'iaai' ) {
+				if (auctionType === 'iaai') {
 					usaDeliveryRow = calculationIAAIData.find((item) => item.city === lotLocation);
 				}
 
 				const oceanDeliveryGR = [
-					{ warehouse: "NEW YORK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
-					{ warehouse: "NORFOLK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
-					{ warehouse: "SAVANNAH", priceSedan: 800, priceLarge: 900, priceBigSuv: 1250, priceMoto: 400},
-					{ warehouse: "MIAMI", priceSedan: 900, priceLarge: 1000, priceBigSuv: 1300, priceMoto: 425},
-					{ warehouse: "HOUSTON", priceSedan: 975, priceLarge: 1075, priceBigSuv: 1400, priceMoto: 450},
-					{ warehouse: "CHICAGO", priceSedan: 1000, priceLarge: 1100, priceBigSuv: 1450, priceMoto: 475},
-					{ warehouse: "LOS ANGELES", priceSedan: 1500, priceLarge: 1600, priceBigSuv: 1950, priceMoto: 750},
-					{ warehouse: "SEATTLE", priceSedan: 1400, priceLarge: 1500, priceBigSuv: 2400, priceMoto: 800},
-					{ warehouse: "TORONTO", priceSedan: 1200, priceLarge: 1350, priceBigSuv: 1650, priceMoto: 525},
+					{warehouse: "NEW YORK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
+					{warehouse: "NORFOLK", priceSedan: 850, priceLarge: 950, priceBigSuv: 1300, priceMoto: 400},
+					{warehouse: "SAVANNAH", priceSedan: 800, priceLarge: 900, priceBigSuv: 1250, priceMoto: 400},
+					{warehouse: "MIAMI", priceSedan: 900, priceLarge: 1000, priceBigSuv: 1300, priceMoto: 425},
+					{warehouse: "HOUSTON", priceSedan: 975, priceLarge: 1075, priceBigSuv: 1400, priceMoto: 450},
+					{warehouse: "CHICAGO", priceSedan: 1000, priceLarge: 1100, priceBigSuv: 1450, priceMoto: 475},
+					{warehouse: "LOS ANGELES", priceSedan: 1500, priceLarge: 1600, priceBigSuv: 1950, priceMoto: 750},
+					{warehouse: "SEATTLE", priceSedan: 1400, priceLarge: 1500, priceBigSuv: 2400, priceMoto: 800},
+					{warehouse: "TORONTO", priceSedan: 1200, priceLarge: 1350, priceBigSuv: 1650, priceMoto: 525},
 				];
 
 
 				const oceanDeliveryLT = [
-					{ warehouse: "NEW YORK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
-					{ warehouse: "NORFOLK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
-					{ warehouse: "SAVANNAH", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
-					{ warehouse: "MIAMI", priceSedan: 775, priceLarge: 825, priceBigSuv: 1075, priceMoto: 400},
-					{ warehouse: "HOUSTON", priceSedan: 825, priceLarge: 875, priceBigSuv: 1200, priceMoto: 425},
-					{ warehouse: "CHICAGO", priceSedan: 900, priceLarge: 950, priceBigSuv: 1250, priceMoto: 425},
-					{ warehouse: "LOS ANGELES", priceSedan: 1300, priceLarge: 1350, priceBigSuv: 1700, priceMoto: 550},
-					{ warehouse: "SEATTLE", priceSedan: 1700, priceLarge: 1800, priceBigSuv: 2400, priceMoto: 750},
-					{ warehouse: "TORONTO", priceSedan: 1000, priceLarge: 1050, priceBigSuv: 1350, priceMoto: 500},
+					{warehouse: "NEW YORK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{warehouse: "NORFOLK", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{warehouse: "SAVANNAH", priceSedan: 700, priceLarge: 750, priceBigSuv: 1000, priceMoto: 375},
+					{warehouse: "MIAMI", priceSedan: 775, priceLarge: 825, priceBigSuv: 1075, priceMoto: 400},
+					{warehouse: "HOUSTON", priceSedan: 825, priceLarge: 875, priceBigSuv: 1200, priceMoto: 425},
+					{warehouse: "CHICAGO", priceSedan: 900, priceLarge: 950, priceBigSuv: 1250, priceMoto: 425},
+					{warehouse: "LOS ANGELES", priceSedan: 1300, priceLarge: 1350, priceBigSuv: 1700, priceMoto: 550},
+					{warehouse: "SEATTLE", priceSedan: 1700, priceLarge: 1800, priceBigSuv: 2400, priceMoto: 750},
+					{warehouse: "TORONTO", priceSedan: 1000, priceLarge: 1050, priceBigSuv: 1350, priceMoto: 500},
 				];
 				if (type === "sedan") {
 					console.log("Run type sedan");
@@ -1508,19 +1539,19 @@ const uiInits = {
 				const gibrid = document.getElementById("gibrid").checked;
 				const insurance = document.getElementById("insurance").checked;
 
-				if(!lotLocation) return
+				if (!lotLocation) return
 
 				let usaDeliveryRow;
 				let deliveryToPort;
 
 				usaDeliveryRow = data.find((item) => item.city === lotLocation);
-				if ( carType === 'sedan' ) {
+				if (carType === 'sedan') {
 					deliveryToPort = usaDeliveryRow?.['large'] || 0;
 				}
-				if ( carType === 'large' || carType === 'big' ) {
+				if (carType === 'large' || carType === 'big') {
 					deliveryToPort = usaDeliveryRow?.['oversize'] || 0;
 				}
-				if ( carType === 'moto' ) {
+				if (carType === 'moto') {
 					deliveryToPort = usaDeliveryRow?.['moto'] || 0;
 				}
 
@@ -1552,7 +1583,7 @@ const uiInits = {
 				const customsFee = 120;
 				const storageFee = 400;
 				console.log(usdRate)
-				let costToMinsk = port === 'georgia'  ? 2700 : 960
+				let costToMinsk = port === 'georgia' ? 2700 : 960
 				let total = costToMinsk + carCost + fireContainer + auctionFee + deliveryToPort + deliveryByOcean + portFee + customsDuty * usdToEur + (customsFee + recyclingFee + storageFee) / usdRate;
 				if (insurance) {
 					total += total * 0.03;
@@ -1574,7 +1605,7 @@ const uiInits = {
 
 			const expenseCalculator = document.getElementById('expense-calculator');
 
-			if ( expenseCalculator ) {
+			if (expenseCalculator) {
 				document.getElementById('expense-calculator').addEventListener('change', calculate);
 				loadCalculationData();
 			}
