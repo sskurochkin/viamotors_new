@@ -37,19 +37,22 @@ header.header
 				ul.header-nav__list
 					li.header-nav__item
 						a(href='/').header-nav__link Главная
-					li.header-nav__item
+					li.header-nav__item.has-nav
 						a(href='/services').header-nav__link Услуги СТО
+						ul.header-subnav
+							li.header-nav__item
+								a(href='/add-services').header-nav__link Доп. услуги
+							li.header-nav__item
+								a(href='/price').header-nav__link Цены
+							li.header-nav__item
+								a(href='/sale').header-nav__link Акции
+							li.header-nav__item
+								a(href='/payment').header-nav__link Рассрочка
+							li.header-nav__item
+								a(href='/contacts').header-nav__link Контакты
+							li.header-nav__item
+								a(href='/about').header-nav__link О нас
 					li.header-nav__item
-						a(href='/add-services').header-nav__link Доп. услуги
-					li.header-nav__item
-						a(href='/price').header-nav__link Цены
-					li.header-nav__item
-						a(href='/sale').header-nav__link Акции
-					li.header-nav__item
-						a(href='/payment').header-nav__link Рассрочка
-					li.header-nav__item
-						a(href='/contacts').header-nav__link Контакты
-					li.header-nav__item
-						a(href='/about').header-nav__link О нас
-					li.header-nav__item(style="background: #ff7033")
 						a(href='/usa').header-nav__link Авто из США
+					li.header-nav__item.disabled
+						a(href='/usa').header-nav__link Подбор авто в РБ

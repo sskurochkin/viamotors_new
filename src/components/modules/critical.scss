@@ -519,15 +519,65 @@
 
 .price-table__table {
 	//margin-top: 40px;
-	overflow: scroll;
+	overflow: auto;
 
 	.table__body {
 		width: 850px;
 	}
 
 	.table__header {
-		background-color: #5d89d6;
+		padding: 0;
+
+		.table-name{
+			height: auto;
+			background-color: #5d89d6;
+			display: flex;
+			align-items: center;
+			align-self: stretch;
+			padding: 8px;
+		}
+		.table-value__item{
+			padding: 8px;
+			background-color: #5d89d6;
+			height: auto;
+			align-self: stretch;
+			display: flex;
+			align-items: center;
+		}
+
 	}
+
+	.table-row{
+		padding: 0;
+		background-color: transparent;
+		.table-value__item,
+		.table-name{
+			display: flex;
+			align-items: center;
+			align-self: stretch;
+			padding: 8px 5px;
+		}
+		.table-name{
+			padding: 8px 10px;
+		}
+		.table-value{
+			align-self: stretch;
+		}
+
+	}
+	.table__body{
+		.table-row{
+
+			&:nth-child(even){
+				.table-value__item,
+				.table-name{
+					background-color: #f1f1f1;
+				}
+			}
+
+		}
+	}
+
 }
 
 .sale {

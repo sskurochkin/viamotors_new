@@ -189,7 +189,7 @@ class SLAMBOX {
             const pagePath = path.split('\\').join('/');
 
 
-            if (!SLAMBOX.dependencies.length) return undefined;
+            if (!SLAMBOX.dependencies?.length) return undefined;
 
             SLAMBOX.dependencies.forEach((item) => {
                 if (item.deps.includes(path.normalize())) {
