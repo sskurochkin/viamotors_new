@@ -2,117 +2,78 @@
 
 .hero {
 	position: relative;
-	height: calc(100svh);
+	height: 100%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	gap: 30px;
+	flex-direction: column;
+	padding-top: 230px;
+	padding-bottom: 60px;
 
-	&-bg {
-
+	@media (max-width: $md - 1) {
+		padding-top: 200px;
 	}
-	&-logo{
-		position: absolute;
-		top: 20px;
-		width: 220px;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		z-index: 2;
-		pointer-events: none;
+	@media (max-width: $sm - 1) {
+		padding-top: 165px;
+		gap: 20px;
+		padding-bottom: 40px;
+	}
+
+	&-title{
+		text-align: center;
+		font-size: 40px;
+		font-weight: 700;
+		@media (max-width: $md - 1) {
+			font-size: 32px;
+		}
+
 		@media (max-width: $sm - 1) {
-			width: 120px;
-		}
-		img{
-			width: 100%;
-			object-fit: contain;
+			font-size: 24px;
 		}
 	}
+
 
 	&__items{
-		display: flex;
-		width: 100%;
-		height: 100%;
-		@media (max-width: $sm - 1) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 32px;
+		@media (max-width: $md - 1) {
+			gap: 16px;
+		}
+		@media (max-width: $xs - 1) {
 			flex-direction: column;
+			display: flex;
 		}
 	}
 	&__item{
+		padding: 32px 24px;
 		position: relative;
-		width: calc(100% / 3);
 		transition: all ease .3s;
-		border: 2px solid white;
-		box-shadow: inset 0 0 10px 5px rgba(0,0,0, 0.5);
-		backdrop-filter: blur(10px);
-		overflow: hidden;
-		@media (max-width: $sm - 1) {
-			width: 100%;
-			height: calc(100% / 3);
-			&:first-child{
-				.hero__item-content{
-					padding-top: 40px;
-				}
+		border-radius: 12px;
+		border: 2px solid var(--base-color);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		text-align: center;
+
+		@media (max-width: $md - 1) {
+			padding: 24px 16px;
+			h2{
+				font-size: 16px;
 			}
 		}
-		img{
-			position: absolute;
-			inset: 0;
-			filter: blur(5px);
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: all ease .3s;
-			@media (max-width: $md - 1) {
-				filter: blur(2px);
-			}
-		}
+
 		&:hover {
 			@media (hover: hover) {
 				cursor: pointer;
-				img{
-					transform: scale(1.05);
-					filter: none;
-				}
+
 			}
 		}
 
-		&-content{
-			position: absolute;
-			inset: 0;
-			padding: 40px 60px;
-			text-align: center;
-			display: flex;
-			flex-direction: column;
-			gap: 20px;
-			justify-content: center;
-			pointer-events: none;
-			z-index: 2;
-			align-items: center;
-			color: #ffffff;
-			@media (max-width: $md - 1) {
-				padding: 20px;
-			}
-			@media (max-width: $sm - 1) {
-				gap: 12px;
-			}
-			h2{
-				@media (min-width: $sm) {
-					min-height: 80px;
-					@media (max-width: $md - 1) {
-						min-height: 60px;
-					}
-				}
 
-			}
-			&:before{
-				position: absolute;
-				content: '';
-				inset: 0;
-				z-index: -1;
-				background-color: rgba(0,0,0,0.3);
-			}
-		}
 		.btn{
-			width: 200px;
+			margin-top: auto;
+			width: 100%;
 			pointer-events: auto;
 			@media (max-width: $sm - 1) {
 				height: 40px;

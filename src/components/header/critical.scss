@@ -222,7 +222,7 @@ body.overflow .header {
 			}
 			&.has-nav{
 				@media (min-width: $md){
-					width: 160px;
+					//width: 160px;
 				}
 				@media (max-width: $md - 1) {
 					flex-direction: column;
@@ -539,6 +539,7 @@ body.overflow .header {
 		opacity: 0;
 		visibility: hidden;
 		transition: all ease .3s;
+		width: 140px;
 		.header-nav__item{
 			padding: 10px 20px;
 		}
@@ -546,12 +547,22 @@ body.overflow .header {
 	@media (max-width: $md - 1) {
 		.header-nav__item{
 			&:first-child{
-				padding-top: 16px;
+				padding-top: 12px;
 			}
-			padding: 8px 12px;
+			padding: 6px 12px;
 		}
 	}
 
+}
+
+.has-nav{
+	&--v2{
+		.header-subnav{
+			width: auto;
+			right: auto;
+		}
+
+	}
 }
 
 .header-usa{

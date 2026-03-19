@@ -10,7 +10,7 @@ header.header
 					p "ВиаМоторс"
 					p г.п. Ждановичи
 					p ул. Заречная, д. 50
-			a(href='mailto:nfo@viamotors.by').header-top__mid
+			a(href='mailto:info@viamotors.by').header-top__mid
 				.header-mail__icon.icon
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M14.9592 12.8301L13.2841 14.5108C12.6049 15.1924 11.4097 15.2071 10.7158 14.5108L9.04066 12.8301L3.02441 18.8659C3.24836 18.9694 3.49527 19.0312 3.75777 19.0312H20.2421C20.5046 19.0312 20.7515 18.9695 20.9753 18.8659L14.9592 12.8301Z" fill="#E41522"/>
@@ -38,21 +38,33 @@ header.header
 					li.header-nav__item
 						a(href='/').header-nav__link Главная
 					li.header-nav__item.has-nav
-						a(href='/services').header-nav__link Услуги СТО
+						a(href='/sto').header-nav__link СТО
 						ul.header-subnav
 							li.header-nav__item
-								a(href='/add-services').header-nav__link Доп. услуги
+								a(href='/services').header-nav__link Услуги
 							li.header-nav__item
 								a(href='/price').header-nav__link Цены
 							li.header-nav__item
 								a(href='/sale').header-nav__link Акции
-							li.header-nav__item
+							//-li.header-nav__item
 								a(href='/payment').header-nav__link Рассрочка
-							li.header-nav__item
-								a(href='/contacts').header-nav__link Контакты
+
 							li.header-nav__item
 								a(href='/about').header-nav__link О нас
-					li.header-nav__item
-						a(href='/usa').header-nav__link Авто из США
+					li.header-nav__item.has-nav.has-nav--v2
+						a(href='/usa/').header-nav__link Авто из США
+						ul.header-subnav
+							li.header-nav__item
+								a(href='/usa/#order').header-nav__link Порядок работы
+							li.header-nav__item
+								a(href='/usa/#services').header-nav__link Услуги
+							li.header-nav__item
+								a(href='/usa/#calc').header-nav__link Расчет стоимости
+
+
+							//-li.header-nav__item
+								a(href='/about').header-nav__link О нас
 					li.header-nav__item.disabled
 						a(href='/usa').header-nav__link Подбор авто в РБ
+					li.header-nav__item
+						a(href='/contacts').header-nav__link Контакты

@@ -3,8 +3,15 @@
 @import "./calc";
 
 .usa-page {
+
+	--top-offset: 170px;
+
+	@media (max-width: $sm - 1) {
+		--top-offset: 130px;
+	}
+
 	main {
-		margin-top: -98px;
+		margin-top: var(--top-offset);
 	}
 
 }
@@ -12,9 +19,12 @@
 .u-hero {
 	position: relative;
 	min-height: 700px;
-	height: 100vh;
+	height: calc(100vh - var(--top-offset));
 	background-color: #1C1C1C;
 	color: #ffffff;
+	@media (max-width: $sm - 1) {
+		min-height: 450px;
+	}
 
 	.container {
 		height: 100%;

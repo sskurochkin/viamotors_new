@@ -52,9 +52,12 @@ html(lang='ru-RU')
 	body.theme-default(class=pageBodyClass)
 
 		.wrapper
+			include ../components/header/header
 
 			main.main
 				block main
+			include ../components/footer/footer
+
 
 
 		block vendorScripts
