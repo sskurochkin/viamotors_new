@@ -63,10 +63,46 @@
 			}
 		}
 
+		@media (max-width: $xs - 1) {
+			padding: 12px;
+			//display: grid;
+			//grid-template-columns: 48px 1fr;
+			//grid-template-rows: auto auto;
+			gap: 8px;
+		}
+
 		&:hover {
 			@media (hover: hover) {
 				cursor: pointer;
 
+			}
+		}
+
+		&-icon{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media (max-width: $xs - 1) {
+				grid-row: -1 / 1;
+			}
+			svg{
+				width: 80px;
+				height: 80px;
+				@media (max-width: $md - 1) {
+					width: 58px;
+					height: 58px;
+				}
+				@media (max-width: $xs - 1) {
+					width: 48px;
+					height: 48px;
+				}
+			}
+			path,
+			circle,
+			polyline,
+			line{
+				stroke: var(--base-color)!important;
+				//stroke: #F5365C!important;
 			}
 		}
 
