@@ -1018,16 +1018,16 @@ const uiInits = {
 	},
 	base: function () {
 
-		function setCookieForDay(name, value) {
-			const date = new Date();
-			date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // +24 часа в миллисекундах
-			document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
-		}
+		// function setCookieForDay(name, value) {
+		// 	const date = new Date();
+		// 	date.setTime(date.getTime() + (24 * 60 * 60 * 1000)); // +24 часа в миллисекундах
+		// 	document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/`;
+		// }
 
-		const getCookie = (name) =>
-			document.cookie.split('; ')
-				.find(row => row.startsWith(name + '='))
-				?.split('=')[1] || null;
+		// const getCookie = (name) =>
+		// 	document.cookie.split('; ')
+		// 		.find(row => row.startsWith(name + '='))
+		// 		?.split('=')[1] || null;
 
 
 		document.querySelector('.burger-icon')?.addEventListener('click', function () {
@@ -1040,20 +1040,20 @@ const uiInits = {
 			document.querySelector('.js-header').classList.toggle('active')
 		})
 
-		const startModal = document.getElementById('modal-start')
-
-		startModal.addEventListener('modalHide', ({detail: {el}}) => {
-			setCookieForDay('modalOpen', '1')
-		})
-
-		setTimeout(() => {
-			const isOpen = getCookie('modalOpen')
-
-			if (!isOpen){
-				startModal.modal()
-			}
-
-		}, 1000)
+		// const startModal = document.getElementById('modal-start')
+		//
+		// startModal && startModal.addEventListener('modalHide', ({detail: {el}}) => {
+		// 	setCookieForDay('modalOpen', '1')
+		// })
+		//
+		// setTimeout(() => {
+		// 	const isOpen = getCookie('modalOpen')
+		//
+		// 	if (!isOpen){
+		// 		startModal.modal()
+		// 	}
+		//
+		// }, 1000)
 
 		// const swiper = new Swiper('.swiper', {
 		// 	// Optional parameters
@@ -1583,8 +1583,14 @@ const uiInits = {
 				const customsFee = 120;
 				const storageFee = 400;
 				console.log(usdRate)
-				let costToMinsk = port === 'georgia' ? 2700 : 960
-				let total = costToMinsk + carCost + fireContainer + auctionFee + deliveryToPort + deliveryByOcean + portFee + customsDuty * usdToEur + (customsFee + recyclingFee + storageFee) / usdRate;
+				let term2  = port === 'georgia' ? 2700 : 960
+
+				let term = deliveryToPort + deliveryByOcean
+				let costToMinsk = term + term2
+
+				let customDebt = 700 //todo
+
+				let total = customDebt + costToMinsk + carCost + fireContainer + auctionFee  + portFee + customsDuty * usdToEur + (customsFee + recyclingFee + storageFee) / usdRate;
 				if (insurance) {
 					total += total * 0.03;
 				}
