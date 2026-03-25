@@ -115,6 +115,10 @@
 			pointer-events: auto;
 			background-color: #F5365C;
 			border-color: #F5365C;
+			&.disabled{
+				pointer-events: none;
+				opacity: .7;
+			}
 			&:hover {
 				@media (hover: hover) {
 					cursor: pointer;

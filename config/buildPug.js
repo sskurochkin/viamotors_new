@@ -1,4 +1,4 @@
-const { pages: devPage } = require('../options');
+const { pages: devPage, build } = require('../options');
 const pug = require('pug');
 const path = require('path');
 const fs = require('fs');
@@ -74,7 +74,7 @@ module.exports = {
 								// use worker-farm for parallel pug render
 								return {
 									src: `./src/pages/${page}/${page}.pug`,
-									filename: `${page}.html`,
+									filename: build ? `${page}/index.html` : `${page}.html`,
 									async render() {
 										const string = await new Promise((resolve, reject) => {
 											try {
