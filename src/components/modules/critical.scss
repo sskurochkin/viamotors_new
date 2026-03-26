@@ -361,8 +361,8 @@
 
 .phones-list {
 	&__item {
-		&:first-child {
-			margin-bottom: 8px;
+		&:not(:last-child){
+			margin-bottom: 4px;
 		}
 	}
 
@@ -371,6 +371,10 @@
 		flex-direction: row-reverse;
 		align-items: center;
 		transition: all ease .3s;
+		justify-content: flex-end;
+		@media (max-width: $xs - 1) {
+			font-size: 12px;
+		}
 
 		&:hover {
 			cursor: pointer;

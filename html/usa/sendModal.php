@@ -5,7 +5,7 @@ header('Content-Type: application/json; charset=utf-8');
 // Проверяем метод запроса
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Конфигурационные данные бота
-    define('BOT_TOKEN', '8409464603:AAGjzxg0lB4PaS3cGA7MMZLp5fHyVhAwGeU');
+    define('BOT_TOKEN', '8561035246:AAHo_8OcRbPsVJp5vBx2n-NYWD8qk1D0kno');
     define('CHAT_ID', '635548221');
 
     // Получаем и фильтруем данные
